@@ -1,0 +1,43 @@
+script>
+var fruit="apple"
+function mother(){
+var emotion="happiness"
+var caring="always be happy"
+var money=500
+var areuinoffc="yes"
+var hadbreakfast="dosa"
+document.writeln(emotion)
+}
+mother()
+amma=["happiness", "alwaystobewithu", 5000]
+//variables are in stack, data is in heap
+function care(emotions, caring){
+var salary="45000"
+document.write(emotions, caring)     
+}
+care("happy", "to take care")
+care("joy", "always want to be with u")
+class humans{
+emotion="happiness"
+}
+var venkatesh=new humans()
+var tarun=new humans()
+}
+function father(){
+var work="Buisness"
+var caring="about family"
+var salary=500000
+var hadbreakfast="dosa"
+document.writeln(caring)
+}
+father()
+
+class dad()
+{
+constructor(){
+work ="buisness"
+caring="about familily"
+}
+new data(this.work)
+
+</script>
