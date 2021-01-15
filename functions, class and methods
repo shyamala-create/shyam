@@ -1,0 +1,35 @@
+<script>
+function employee(){
+var Name ="Jai Venkateswara Technologies"
+var EducationalQualification="B TECH MCA MBA BSC MSC"
+var DateOfBirth ="2/6/1988"
+var CommunicationAddress="233/3 Ground floor new thippasandra"
+var Residence="08025216666"
+var Mobile =9900367097
+var Email="venkatesh.db@gmail.com"
+var TotalExp="1 years"
+var Skill="C,CPP all Lang  & 1 years"
+var ReportingManager ="Venkatesh"
+var PANCARD ="asu675901f"
+document.writeln(EducationalQualification, DateOfBirth, CommunicationAddress, Residence,Mobile,Email, TotalExp, Skill)
+}
+employee()
+
+class employe{
+constructor(){
+this.Name ="Jai Venkateswara Technologies"
+this.EducationalQualification="B TECH MCA MBA BSC MSC"
+this.DateOfBirth ="2/6/1988"
+this.CommunicationAddress="233/3 Ground floor new thippasandra"
+this.Residence="08025216666"
+this.Mobile =9900367097
+this.Email="venkatesh.db@gmail.com"
+this.TotalExp="1 years"
+this.Skill="C,CPP all Lang  & 1 years"
+this.ReportingManager ="Venkatesh"
+this.PANCARD ="asu675901f"
+}
+}
+new employe()
+
+</script>
