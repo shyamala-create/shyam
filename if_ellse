@@ -1,0 +1,45 @@
+<script>
+function netconnreq(name){
+if(name == undefined){
+return"invalid data"
+}
+Accountno = 1134556
+Broadbanduserid = 11123456
+ipaddress="10.245.56.78"
+return Accountno
+}
+var Accountno= netconnreq("venk")
+if(Accountno!=undefined){
+}
+document.writeln(Accountno)
+function netusage(totalmbdoenload, mobiledownloadspeed)
+{
+    mobileuploadspeed="32.06 mbps"
+    if( totalmbdoenload >= 100){
+    return "usage is completed"
+    }
+    else{
+    document.writeln(totalmbdoenload, mobiledownloadspeed)
+    }
+}
+netusage(20, "30.05 mbps" )
+class netconreq{
+constructor()
+{
+this.Accountno = 1134556
+this.Broadbanduserid = 11123456
+this.ipaddress="10.245.56.78"
+}
+netusage(totalmbdoenload, mobiledownloadspeed)
+{
+this.totalmbdoenload=totalmbdoenload
+}
+display()
+{
+document.writeln(this.Accountno, this.broadbanduserid)
+}
+}
+var connection = new netconreq()
+connection.netusage("21.26 Gb", "30.05 mbps")
+connection.display()
+</script>
