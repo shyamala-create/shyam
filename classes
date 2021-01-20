@@ -1,0 +1,127 @@
+<script>
+
+class employe{
+constructor(){
+this.Name ="Jai Venkateswara Technologies"
+this.EducationalQualification="B TECH MCA MBA BSC MSC"
+this.DateOfBirth ="2/6/1988"
+this.CommunicationAddress="233/3 Ground floor new thippasandra"
+this.Residence="08025216666"
+this.Mobile =9900367097
+this.Email="venkatesh.db@gmail.com"
+this.TotalExp="1 years"
+this.Skill="C,CPP all Lang  & 1 years"
+this.ReportingManager ="Venkatesh"
+this.PANCARD ="asu675901f"
+document.writeln(this.Name, '<br>',this.EducationalQualification,'<br>',this.DateOfBirth,'<br>',this.CommunicationAddress,'<br>',this.Residence, '<br>',this.Mobile,'<br>', this.Email,'<br>', this.TotalExp,'<br>', this.Skill,'<br>', this.ReportingManager,'<br>', this.PANCARD )
+}
+}
+new employe()
+
+class system_properties{
+constructor(){
+this.Rating = "4.5"
+this.Processor = "Intel® Core™ i5-2450 CPU"
+this.Installed_Memory_RAM= "4.00GB"
+this.System_Type = "64-bit Operating System"
+this.Pen_and_Touch = "No Pen or Touch Input is available for this Display"
+this.Computer_Name = "BALU-PC"
+this.Computer_Description = "WORKGROUP"
+this.Windows_Edition =" Windows 7 Ultimate"
+this.Windows_Product_ID = "00426-OEM-8992662-00497"
+}
+display(){
+document.write(this.Rating, '<br>',this.Processor,'<br>',this.Installed_Memory_RAM,'<br>',this.System_Type,'<br>',this.Pen_and_Touch,'<br>',this.Computer_Name,'<br>',this.Computer_Description,'<br>',this.Windows_Edition,'<br>',this.Windows_Product_ID)
+}
+}
+var laptop = new system_properties()
+laptop.display()
+
+class Moviee{
+constructor(){
+this.Theatre_name= "PSS" 
+this.multiplex_Screen = "screen 3" 
+this.movie_name = "JVT [ C,CPP] "
+this.movie_certification = "U class " 
+this.first_price_per_ticket =" Rs.1050.00 "
+this.Number_of_tickets = "5 "
+this.seat_numbers ="c1,c2,c3,c4,c5" 
+this.Total_amount ="Rs.750.00"
+}
+display()
+{
+document.writeln('<br>','<br>',this.Theatre_name,'<br>',this.multiplex_Screen,'<br>',this.movie_name,'<br>',this.movie_certification,'<br>',this.first_price_per_ticket,'<br>',this.seat_numbers,'<br>', this.Total_amount)
+}
+}
+var plex= new Moviee()
+plex.display()
+
+class Creating_Google_Account{
+constructor(){
+this.First_Name = "venkatesh"
+this.Last_Name = "d b"
+this.Choose_Username ="jvt"
+this.Creat_a_Password =" balu"
+this.Confirm_Your_Password =" balu"
+this.Birthday ="2-6-1986"
+this.Gender =" male"
+this.Mobile =" 9900367097"
+this.Your_current_email_address ="venkatesh.db@gmail.com"
+}
+display()
+{
+document.writeln('<br>','<br>',this.First_Name,'<br>',this.Last_Name,'<br>',this.Choose_Username ,'<br>',this.Creat_a_Password,'<br>',this.Confirm_Your_Password,'<br>',this.Birthday,'<br>',this.Gender,'<br>',this.Mobile,'<br>',this.Your_current_email_address)
+}
+}
+var google=new Creating_Google_Account()
+google.display()
+
+class Health_care_Blood_test{
+constructor(){
+this.Patient_Name= "Sathish"
+this.Patient_ID= 10567890890
+this.Patient_phone= "044 222738"
+this.Billno= 56725
+this.Age=34
+this.Date_of_Birth="15/05/1991"
+this.Gender ="Male"
+this.Fasting="Yes"
+this.Patient_Address= "7f,kaveri road, velur"
+this.Room_No=105
+this.Date_of_time_Collected_blood ="08/09/15 and 08:15"
+this.Enter_date="08/09/15"
+this.Date_and_Time_Respond=" 08/09/15 and 09:16"
+}
+shyam(){
+document.writeln('<br>', '<br>',this.Patient_Name,'<br>',this.Patient_ID,'<br>',this.Patient_phone,'<br>',this.Billno,'<br>',this.Age,'<br>',this.Date_of_Birth,'<br>',this.Gender,'<br>',this.Fasting,'<br>',this.Patient_Address,'<br>',this.Room_No,'<br>',this.Date_of_time_Collected_blood,'<br>',this.Enter_date,'<br>',this.Date_and_Time_Respond)
+}
+}
+var health=new Health_care_Blood_test()
+health.shyam()
+//document.writeln(this.Patient_Name)
+
+
+class Banking_SBI_statement{
+constructor(){
+this.Bank_Name="SBI Bank"
+this.Date=" 29/05/14"
+this.Time=" 19:48"
+this.ATM_No = "SJNBL48"
+this.CARD_No=" xxxx xxxxx xxxx 0516"
+this.BRANCH_NAME="Bangalore Main Branch"
+this.Txn_No ="2907"
+this.Response_code = "072"
+this.With_Drawl ="500.00"
+this.From_AC =" xxxxxxxxxx05 xx01"
+this.Mod_RS =" 0.00"
+this.Available_Bal_Rs=" 1000.00"
+this.Website =" www.statebankof india.co"
+}
+display()
+{
+document.writeln("<br>","<br>",this.Bank_Name,"<br>",this.BRANCH_NAME)
+}
+}
+var shaaaa=new Banking_SBI_statement()
+shaaaa.display()
+</script>
