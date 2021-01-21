@@ -171,5 +171,48 @@ document.writeln('<br>', '<br>', this.Day,'<br>', this.Time,'<br>', this.Per_Slo
 }
 }
 swamy.samy_darshan()
+
+
+let Electric_bill_paid_via_netbanking={
+website:"www.tnebnet.org ",
+tnebusername:"shaa",
+agilan_password:"1234567 ",
+consumer_number:23456123,
+Billing_status:"paid/unpaid ",
+mode_of_payment :"netbanking",
+choose_bank:"sbi username",
+kumar007_password:"1234567 ",
+Transaction_no:"18cv21828578437",
+vpayment_status:" successful",
+
+Bill()
+{
+document.writeln("<br>")
+document.writeln("<br>")
+document.writeln(this.website)
+document.writeln("<br>")
+document.writeln(this.tnebusername)
+document.writeln("<br>")
+document.writeln(this.agilan_password)
+document.writeln("<br>")
+document.writeln(this.consumer_number)
+document.writeln("<br>")
+document.writeln(this.Billing_status)
+document.writeln("<br>")
+document.writeln(this.mode_of_payment )
+document.writeln("<br>")
+document.writeln(this.choose_bank)
+document.writeln("<br>")
+document.writeln(this.kumar007_password)
+document.writeln("<br>")
+document.writeln(this.Transaction_no)
+document.writeln("<br>")
+document.writeln(this.vpayment_status)
+document.writeln("<br>")
+}
+}
+Electric_bill_paid_via_netbanking.Bill()
+
+
 </script>
 
