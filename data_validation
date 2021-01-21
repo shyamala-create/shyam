@@ -1,0 +1,29 @@
+function faredet(dist){
+ditance="323KM"
+    if(dist>=500){
+    return "invalid"
+    }
+ticketfare="Rs.420.00"
+servicecharge="Rs.22.90"
+Totalfare="Rs.442.90"
+return servicecharge
+}
+var accno= faredet(200)
+if(accno!=undefined){
+document.writeln(servicecharge)  
+}
+
+function passeenger(status){
+name=["venkatesh "," "," naveen RM"]
+	if(name[1]==undefined){
+    return "invalid"
+    }
+age=[27,27,23]
+gender=["make","male","male"]
+seat=[7,8,9]
+return age
+}
+var PD=passeenger("RLWL")
+if(PD!=undefined){
+document.writeln(age[0])
+}
