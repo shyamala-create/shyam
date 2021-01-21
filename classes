@@ -124,4 +124,57 @@ document.writeln("<br>","<br>",this.Bank_Name,"<br>",this.BRANCH_NAME)
 }
 var shaaaa=new Banking_SBI_statement()
 shaaaa.display()
+
+class Appearance_information{
+constructor(){
+this.Weight=55 
+this.Hight=5.8 
+this.Eye_colour="brown "
+this.Gender="male "
+this.Home_address="#6/96,rajampet,kadapa"
+this.Home_phone=975545445 
+this.Mobile=8553577745 
+this.State="andhrapradesh "
+this.County="india"
+}
+display(){
+document.writeln("<br>","<br>",this.Weight,"<br>",this.Hight,"<br>",this.Eye_colour,"<br>",this.Gender,"<br>",this.Home_address,"<br>",this.Home_phone,"<br>",this.Mobile,"<br>",this.State,"<br>",this.County)
+}
+}
+var look=new Appearance_information()
+look.display()
+class Vehicle_information{
+constructor(){
+this.Vehicle_type="light motor"
+this.vehicle_car_Colour="red" 
+this.Engine_number="kp98gtyihh457797 "
+this.Chassis_number="tc5678898335r45"
+this.Company="BMW"
+}
+display()
+{
+document.writeln("<br>","<br>",this.Vehicle_type,"<br>",this.vehicle_car_Colour,"<br>",this.Engine_number,"<br>",this.Chassis_number,"<br>",this.Company)
+}
+}
+var bmw=new Vehicle_information()
+bmw.display()
+
+class computer_ups_specifications{
+constructor(){
+this.modelexide="digital600 "
+this.ip_voltage ="230v "
+this.ac_frequency="50hz" 
+this.op_voltage ="230v "
+this.ac_battery_type="sealed maintenance free" 
+this.battery_capacity="12volt 7Ah "
+this.battery_backup="12 to 20 mints"
+this.recharge_time="5 to 6 hours "
+this.weight="6.1 kg"
+}
+display(){
+document.writeln("<br>","<br>",this.modelexide,"<br>",this.ip_voltage,"<br>",this.ac_frequency,"<br>",this.op_voltage,"<br>",this.ac_battery_type,"<br>",this.battery_capacity,"<br>",this.battery_backup,"<br>",this.recharge_time,"<br>",this.weight)
+}
+}
+var cs=new computer_ups_specifications()
+cs.display()
 </script>
