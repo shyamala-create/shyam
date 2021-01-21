@@ -177,4 +177,47 @@ document.writeln("<br>","<br>",this.modelexide,"<br>",this.ip_voltage,"<br>",thi
 }
 var cs=new computer_ups_specifications()
 cs.display()
+
+class Electric_bill_paid_via_netbanking{
+constructor(){
+
+this.website="www.tnebnet.org "
+this.tnebusername="shaa"
+this.agilan_password="1234567 "
+this.consumer_number=23456123
+this.Billing_status="paid/unpaid "
+this.mode_of_payment ="netbanking"
+this.choose_bank="sbi username"
+this.kumar007_password="1234567 "
+this.Transaction_no="18cv21828578437"
+this.vpayment_status=" successful"
+}
+display()
+{
+document.writeln("<br>")
+document.writeln("<br>")
+document.writeln(this.website)
+document.writeln("<br>")
+document.writeln(this.tnebusername)
+document.writeln("<br>")
+document.writeln(this.agilan_password)
+document.writeln("<br>")
+document.writeln(this.consumer_number)
+document.writeln("<br>")
+document.writeln(this.Billing_status)
+document.writeln("<br>")
+document.writeln(this.mode_of_payment)
+document.writeln("<br>")
+document.writeln(this.choose_bank)
+document.writeln("<br>")
+document.writeln(this.kumar007_password)
+document.writeln("<br>")
+document.writeln(this.Transaction_no)
+document.writeln("<br>")
+document.writeln(this.vpayment_status)
+document.writeln("<br>")
+}
+}
+var Bill=new Electric_bill_paid_via_netbanking()
+Bill.display()
 </script>
