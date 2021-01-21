@@ -27,3 +27,113 @@ var PD=passeenger("RLWL")
 if(PD!=undefined){
 document.writeln(age[0])
 }
+class flight
+   {
+     constructor(flightname,flightno)
+     {
+       this.flightname=flightname
+       this.flightno=flightno
+       this.info(100038,41150,"1/1/2021","Business Class","Premium")
+     }
+     info(id,no,date,time,clas,quota)
+     {
+          this.id=id
+          this.no=no
+          this.date=date
+          this.time=time
+          this.clas=clas
+          this.quota=quota
+          if(this.id==100038)
+          {
+            document.writeln("Your ticket details are")
+            this.details("Adithyan","Male","aj@123","COK","MLB")
+          }
+          else
+          {
+            document.writeln("Error in ticket no try again!!")
+          }
+     }
+     details(name,gender,mailid,from,to)
+      {
+         this.name=name
+         this.gender=gender
+         this.mailid=mailid
+         this.from=from
+         this.to=to
+         if(mailid=="aj@123")
+         {
+          //document.writeln("Wish you a happy and safe journey")
+          this.display()
+        }
+        else
+        {
+          document.writeln("Error try again!!")
+        }
+        }
+      display()
+      {
+       
+       document.writeln(this.flightname)
+       document.writeln(this.flightno)
+       document.writeln(this.id)
+       document.writeln(this.no)
+       document.writeln(this.date)
+       document.writeln(this.time)
+       document.writeln(this.clas)
+       document.writeln(this.quota)
+       document.writeln(this.name)
+       document.writeln(this.gender)
+       document.writeln(this.mailid)
+       document.writeln(this.from)
+       document.writeln(this.to)
+       document.writeln("Wish you a happy and safe journey")
+      }
+    }
+    var f=new flight("Air India",3664)
+let system=
+   {
+     rating:"4.5",
+     processor:"Intelcorei5",
+     ram:"4GB",
+   spec(type,name,description)
+   {
+      this.type=type
+      this.name=name
+      this.description=description
+      this.osdetails("Windows",10,8051)
+   },
+   osdetails(os,version,id)
+   {
+     this.os=os
+     this.version=version
+     this.id=id
+     this.validate()
+   },
+   validate()
+   {
+     if(this.id==8051)
+     {
+       document.writeln("<br\>Veraion details are:")
+       this.display()
+     }
+       else
+       {
+         document.writeln("Error in version id")
+       }
+   },
+   display()
+   {
+    
+     document.write(this.rating)
+     document.write(this.processor)
+     document.write(this.ram)
+     document.write(this.type)
+     document.write(this.name)
+     document.write(this.description)
+     document.write(this.os)
+     document.write(this.version)
+    document.write(this.id)
+
+    }
+   }
+   system.spec("<br/>64Bit","<br/>hp","<br/>workgroup")
