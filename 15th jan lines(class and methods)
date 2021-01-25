@@ -31,7 +31,7 @@ function netusage(totalmbdoenload, mobiledownloadspeed)
 }
 netusage(20, "30.05 mbps" )
 class netconreq{
-constructor()
+constructor(Accountno, Broadbanduserid, ipaddress)
 {
 this.Accountno = 1134556
 this.Broadbanduserid = 11123456
@@ -67,6 +67,7 @@ document.writeln(this.Accountno, this.broadbanduserid)
 }
 }
 var connection = new netconreq()
+
 connection.netusage("21.26 Gb", "30.05 mbps")
 connection.display()
 var Accountno= netconnreq("venk")
