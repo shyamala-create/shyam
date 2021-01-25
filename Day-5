@@ -1,5 +1,11 @@
-<script>
 
+		    Learning:- Array Data structures, and data validations, classes and methods.
+                    challenges:- Got some errors in validation part and cleared.
+                    Total :- 500 lines of code completed
+                               (19th jan 2021)
+                    working hours:- 6hrs
+
+======================================================================================================================
 
 let arr = [112345, 11112345, "10.45.67.8"]
 document.writeln(arr[0])
