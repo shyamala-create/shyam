@@ -1,0 +1,104 @@
+
+<script>
+class employee
+{
+ // name="Ram"
+  static address="Btm"
+  constructor(name,mailid,mobno)
+  {
+     this.name=name
+     this.mailid=mailid
+     this.mobno=mobno
+  }
+  static addr()
+  {
+    document.writeln(employee.address)
+  }
+  display()
+  {
+     document.writeln(this.name)
+     document.writeln(this.mailid)
+     document.writeln(this.mobno)
+  }
+  set(a)
+  {
+     this.name=a
+    
+  }
+}
+var k=new employee("Ajay", "ajay@gmail.com",859350584)
+//k.display()
+k.set("Arithra")
+k.display()
+employee.addr()
+
+class company
+{ 
+      //Company_name = "JVT"
+      //Designation="Programmer"
+      //Salary ="2.3 or 230000"
+      static Location =" Bangalore"
+      constructor(Company_name, Designation, Salary){
+           this.Company_name=Company_name
+           this.Designation=Designation
+           this.Salary =Salary
+           }
+           static company1()
+           {
+              document.writeln(company.Location)
+              }
+           display()
+           {
+              document.writeln("<br>")
+              document.writeln(this.company_name)
+              document.writeln("<br>")
+              document.writeln(this.Designation)
+              document.writeln("<br>")
+              document.writeln(this.Salary)
+              document.writeln("<br>")
+              }
+              set(a)
+              {
+              this.company_name=a
+              }
+   }
+   var jvt=new company("JVT", "Programmer", "2.3 or 230000")
+   jvt.set("shyam")
+   jvt.display()
+   company.company1()
+class Request{
+static requestion="mail"
+constructor(from, to, date, subject, mailed-by, signed-by)
+{
+this.from=from 'Siva Prasad <kasi.sivap@gmail.com>'
+this.to=to'D B Venkatesh <venkatesh.db@gmail.com>'
+this.date=date'Fri, Nov 27, 2015 at 12:05 AM'
+this.subject= subject'Request to forward the Resumes'
+this.mailed_by=mailed_by'gmail.com'
+this.signed_by=signed_by"gmail.com"
+}
+static mail()
+{
+document.writeln(Request.
+</script>
+
+class tickdet
+{
+constructor()
+{
+this.trainnumnname="56213 / TIRUPATI PASSR"
+this.datebooking="14-Dec-2015"
+this.class="SLEEPERCLASS"
+}
+dply(name)
+{
+document.writeln(name)
+}
+}
+var varsi=new tickdet()
+//varsi.nxt()
+//varsi.dply()
+function TNJ(callback){
+callback("XXX")
+}
+TNJ(varsi.dply)
