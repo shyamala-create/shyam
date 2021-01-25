@@ -165,3 +165,30 @@ var k=new employee("www.intime.com",8593657465)
 //k.display()
 k.set("intime")
 k.display()
+
+
+
+class company{
+    static name="Intime"
+    constructor(emp_name, designation, years)
+    {
+        this.emp_name=emp_name;
+        this.designation=designation;
+        this.years=years;
+    }
+    static company_name()
+    {
+        console.log(company.name)
+    }
+    display()
+    {
+        console.log(this.emp_name)
+        console.log(this.designation)
+        console.log(this.years)
+    }
+}
+let init=new company("vinit", "software_engineer", "3years")
+company.company_name()
+init.display()
+
+
