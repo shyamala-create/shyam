@@ -102,3 +102,39 @@ function TNJ(callback){
 callback("XXX")
 }
 TNJ(varsi.dply)
+
+
+class Request{
+static requestion="mail"
+constructor(from, to, date, subject, mailedby, signedby)
+{
+this.from=from// 'Siva Prasad <kasi.sivap@gmail.com>'
+this.to=to//'D B Venkatesh <venkatesh.db@gmail.com>'
+this.date=date//'Fri, Nov 27, 2015 at 12:05 AM'
+this.subject= subject//'Request to forward the Resumes'
+this.mailed_by=mailed_by//'gmail.com'
+this.signed_by=signed_by//"gmail.com"
+}
+static mail()
+{
+document.writeln(Request.mail())
+}
+
+display()
+{
+document.writeln(this.from)
+document.writeln(this.to)
+document.writeln(this.date)
+document.writeln(this.subject)
+document.writeln(this.mailed_by)
+document.writeln(this.signed_by)
+}
+set(a)
+{
+this.requestion=a
+}
+var mail=new Request('Siva Prasad <kasi.sivap@gmail.com>','D B Venkatesh <venkatesh.db@gmail.com>','Fri, Nov 27, 2015 at 12:05 AM','Request to forward the Resumes','gmail.com',"gmail.com")
+mail.set();
+mail.display();
+Request.requestion()
+
