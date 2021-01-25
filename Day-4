@@ -1,6 +1,6 @@
-		    Learning:- Array Data structures, and data validations, classes and methods.
+		    Learning:- Array Data structures, and data validations, classes and let methods.
                     challenges:- Got some errors in validation part and cleared.
-                    Total :- 350 lines of code completed
+                    Total :- 350++ lines of code completed
                                (18th jan 2021)
                     working hours:- 6hrs
 =======================================================================================================================
@@ -85,6 +85,66 @@ function DataScience(callback){
 }
 
 DataScience(AI) //Line 7 
+========================================================================================================================================
+class creditcarddetails
+{
+      creditcardverification(number)
+       {
+        this.number = number
+         if(this.number == 97465893)
+           {
+            this.utilization= 3;
+            this.balance="571.36,0";
+            this.lastpayment="300, 11Jan2021";
+            this.creditlimit="18000,17428.64";
+            this.balance = this.showlimit="3600,3600";
+           document.writeln("Available Cash" + this.balance);
+          }
+        else
+         {
+          document.writeln("Invalid Credentials");
+         }
+       }
+    balance(TotalOutstanding , unbilled)
+    {  
+    this.TotalOutstanding = TotalOutstanding
+    this.unbilled = unbilled
+    document.writeln("Total Outstanding :"+ this.TotalOutstanding);   
+    document.writeln("Unbilled "+ this.unbilled);
+   }
+    showlastpaymentmade(lastamountmade, PaymentMadeOn )
+     {
+       this.lastamountmade = lastamountmade
+       this.PaymentMadeon = PaymentMadeOn
+       document.writeln("Last Payment made on "+this.PaymentMadeon)
+       document.writeln("Last Amount Made"+ this.lastamountmade);
+     }
+     creditlimit(TotalCredit, Availcred)
+      {
+         this.TotalCredit = TotalCredit
+         this.Availcred = Availcred
+         if(this.TotalCredit > 20000)
+          {
+             document.writeln("Credit Limit Exhausted");
+          }
+        else
+         {
+           this.rem  = 20000 - this.TotalCredit;
+          document.writeln("Left over Credits "+ this.rem);
+        }
+      }
+     limit(totalcash, cashavailable )
+      {    
+         this.totalcash= totalcash
+         this.cashavailable = cashavailable
+         return this.cashavailable;
+      }
+}
+let bal = new creditcarddetails()
+bal.creditcardverification(97465893)
+bal.creditcardverification(97465893)
+</script>
+
 =================================================================================================================
 
 function faredet(dist){
@@ -251,11 +311,13 @@ this.Employee_type="software engineer"
 this.Date_of_birth="12-07-1992"
 this.City_of_birth="rajampet"
 }
-dispaly()
+display()
 {
-document.write(Lastname)
+document.write(this.Lastname)
 }
 }
+var reg=new License()
+reg.display()
 ==================================================================================================================
 
 
