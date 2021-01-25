@@ -1,0 +1,74 @@
+<script>
+function passeenger(status){
+name=["venkatesh "," "," naveen RM"]
+	if(name[1]==undefined){
+    return "invalid"
+    }
+age=[27,27,23]
+gender=["make","male","male"]
+seat=[7,8,9]
+return age
+}
+var PD=passeenger("RLWL")
+if(PD!=undefined){
+document.writeln(age[0])
+}
+function TNJ(callback){
+callback("RLWL")
+}
+TNJ(passeenger)
+
+function AI(identifyface, automation){
+	document.write(identifyface, "<br>", automation)
+}
+
+function DataScience(callback){
+	callback("intimeteclogo", "attendance")
+}
+
+DataScience(AI) //Line 7 
+
+class tickdet
+{
+constructor()
+{
+this.trainnumnname="56213 / TIRUPATI PASSR"
+this.datebooking="14-Dec-2015"
+this.class="SLEEPERCLASS"
+}
+dply(name)
+{
+document.writeln("<br>")
+document.writeln(name)
+}
+}
+var varsi=new tickdet()
+//varsi.nxt()
+//varsi.dply()
+function TNJ(callback){
+callback("XXX")
+}
+TNJ(varsi.dply)
+
+class License{
+constructor()
+{
+this.Lastname="kumar"
+this.Firstname= "Pavan Middle"
+this.name="Bijjavaram"
+this.Drivers_license_number="ka50201500006939 "
+this.state="karnataka"
+this.Drivers_license country="india"
+this.Civilian_type=" around india "
+this.Employee_type="software engineer"
+this.Date_of_birth="12-07-1992"
+this.City_of_birth="rajampet"
+}
+dispaly()
+{
+document.write(Lastname)
+}
+}
+
+</script>
+<!-- edit your html here -->
