@@ -1,10 +1,10 @@
                     Learning:- about validation, if and else, different methods, functions
-                    challenges:- Bit confusions in code writting different methods.
+                    challenges:- Bit confusions in  writting code different methods.
                     Total :- 220 lines of mission code completed
                                (15th jan 2021)
                     working hours:- 3hrs:30mins
 
--------------------------------------------------------------------------------------
+=========================================================================================================================================
 <script>
 function netconnreq(name){
 if(name == undefined){
@@ -50,6 +50,43 @@ var connection = new netconreq()
 connection.netusage("21.26 Gb", "30.05 mbps")
 connection.display()
 
+=============================================================================================================================================
+class TheatreInformation{
+
+constructor(theatrename,screen,moviename,certification,clas,pricepertkt,numberoftkt,seatnumbers,totalamount)
+{
+  this.TheatreName = theatrename
+  this.Screen = screen
+  this.MovieName = moviename
+  this.MovieCertification = certification
+  this.classy = clas
+  this.PricePerTicket = pricepertkt
+  this.NumberOfTkt = numberoftkt
+  this.SeatNumbers = seatnumbers
+  this.TotalAmount = totalamount
+}
+DisplayInformation()
+{
+ console.log(this.TheatreName,this.Screen,this.MovieName,this.TotalAmount)
+}
+DisplayGreetings()
+{
+  if(this.TotalAmount >500)
+  { 
+  return "expensive"
+  }
+  else
+  {
+   return "Good deal"
+  }
+}
+}
+let emily = new TheatreInformation("PSS Multiplex","Screen 3","jvt[c,cpp]","u","first","Rs 1000",5,"c1,c2,c3,c4,c5",1050)
+    emily.DisplayInformation()
+var msg = emily.DisplayGreetings()
+console.log(msg)
+
+=========================================================================================================================================
 class netconreq{
 constructor()
 {
@@ -98,29 +135,25 @@ if(Accountno!=undefined){
 }
 document.writeln(Accountno)
 
-class netconreq{
-constructor()
-{
-this.Accountno = 1134556
-this.Broadbanduserid = 11123456
-this.ipaddress="10.245.56.78"
-}
-netusage(totalmbdoenload, mobiledownloadspeed)
-{
-this.totalmbdoenload=totalmbdoenload
-}
-display()
-{
-document.writeln(this.Accountno, this.broadbanduserid)
-}
-}
-var connection = new netconreq()
-connection.netusage("21.26 Gb", "30.05 mbps")
-connection.display()
-</script>
+==================================================================================================================
 
+function MobileInfo(totalmbdownloaded,mobiledownloadspeed,mobileuploadspeed)
+{
+  
+  if(totalmbdownloaded > 100)
+   {
+     return "Exceed"
+   }
+   else
+   {
+     return "Data is left"
+     }
+}
 
---------------------------------------------------------------------------------------------------------
+let results = MobileInfo(121,30,32.06)
+ console.log(results)
+
+==================================================================================================================
 
 <script>
 accno =112345
@@ -159,6 +192,8 @@ transid:FCSjijr0938478764765
 amount: 300
 }
 
+================================================================================================================================
+
 //object data_structure
 let netconnect = {
                 accno :112345
@@ -179,6 +214,7 @@ let arr1= new map()
 arr1.set("c", 1) //set is a method which add datas in data structure
 arr1.get("c")
 
+====================================================================================================================================
 
 class intimetec{
 }
@@ -229,8 +265,7 @@ let shyam={
           }
 shyam.verifytrainer()
 </script>
-
---------------------------------------------------------------------------------------------
+==================================================================================================================================
 
 function faredet(dist){
 ditance="323KM"
@@ -435,52 +470,4 @@ let bal = new creditcarddetails()
 bal.creditcardverification(97465893)
 bal.creditcardverification(97465893)
 
-===================================================================================================
-
-let system=
-   {
-     rating:"4.5",
-     processor:"Intelcorei5",
-     ram:"4GB",
-   spec(type,name,description)
-   {
-      this.type=type
-      this.name=name
-      this.description=description
-      this.osdetails("Windows",10,8051)
-   },
-   osdetails(os,version,id)
-   {
-     this.os=os
-     this.version=version
-     this.id=id
-     this.validate()
-   },
-   validate()
-   {
-     if(this.id==8051)
-     {
-       document.writeln("<br\>Veraion details are:")
-       this.display()
-     }
-       else
-       {
-         document.writeln("Error in version id")
-       }
-   },
-   display()
-   {
-    
-     document.write(this.rating)
-     document.write(this.processor)
-     document.write(this.ram)
-     document.write(this.type)
-     document.write(this.name)
-     document.write(this.description)
-     document.write(this.os)
-     document.write(this.version)
-    document.write(this.id)
-
-    }
-   }
-   system.spec("<br/>64Bit","<br/>hp","<br/>workgroup")
+===============================================================================================================
