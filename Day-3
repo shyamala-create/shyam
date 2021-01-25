@@ -340,57 +340,7 @@ var Bill=new Electric_bill_paid_via_netbanking()
 Bill.display()
 
 
-let redbus={
-        fromcity:"banglr",
-        onward: "20th jan 2021",
-        }
 
-let ola ={
-               from :"BTM",
-               to: "silkboard",
-               requestride()
-               {
-               
-               },
-               receivedriver(){
-               }
-               }
-class uber{
-from ="BTM"
-to= "silkboard"
-requestride()
-{
-               
-}
-receivedriver(){
-               }
-}
-let payment={
-mobno:979384786
-order id:mmj98745
-transid:FCSjijr0938478764765
-amount: 300
-}
-
-//object data_structure
-let netconnect = {
-                accno :112345
-                broadbandid: 11112345
-                ipaddess:"10.45.67.8"
-                }
-document.writeln(netconnect.accno)
-//array data_structure
-let arr = [112345, 11112345, "10.45.67.8"]
-document.writeln(arr[0])
-
-for(i=0; i<arr.length; i++)
-{
-document.writeln("loop"+arr[i])
-}
-//map data structure
-let arr1= new map()
-arr1.set("c", 1) //set is a method which add datas in data structure
-arr1.get("c")
 
 
 class intimetec{
