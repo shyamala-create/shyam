@@ -8,7 +8,7 @@ let redbus={
         onward: "20th jan 2021",
         }
 
-let shyamala ={
+let ola ={
                from :"BTM",
                to: "silkboard",
                requestride()
@@ -94,7 +94,7 @@ p3.method=function()
 document.write(this.tablet, this.method)}
 p3.method()
 
-let shyam={
+let empl_detls={
            company:"jvt",
            exp:14,
            location:"banglr",
@@ -103,9 +103,9 @@ let shyam={
                 document.write(this.company)
                }
           }
-shyam.verifytrainer()
+emply_detls.verifytrainer()
 
-let shyam={
+let work={
            company:"jvt",
            exp:14,
            location:"banglr",
@@ -114,5 +114,5 @@ let shyam={
                 document.write(this.company)
                }
           }
-shyam.verifytrainer()
+work.verifytrainer()
 </script>
