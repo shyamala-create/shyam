@@ -1,7 +1,7 @@
 <script>
 
 class employe{
-constructor(){
+constructor(Name, EducationalQualification,DateOfBirth,CommunicationAddress,Residence,Mobile ,Email,TotalExp,Skill,ReportingManager,PANCARD){
 this.Name ="Jai Venkateswara Technologies"
 this.EducationalQualification="B TECH MCA MBA BSC MSC"
 this.DateOfBirth ="2/6/1988"
@@ -19,7 +19,7 @@ document.writeln(this.Name, '<br>',this.EducationalQualification,'<br>',this.Dat
 new employe()
 
 class system_properties{
-constructor(){
+constructor(Rating,Processor,Installed_Memory_RAM,System_TypePen_and_Touch,Computer_Name,Computer_Description ,Windows_Edition,Windows_Product_ID){
 this.Rating = "4.5"
 this.Processor = "Intel® Core™ i5-2450 CPU"
 this.Installed_Memory_RAM= "4.00GB"
@@ -38,7 +38,7 @@ var laptop = new system_properties()
 laptop.display()
 
 class Moviee{
-constructor(){
+constructor(Theatre_name,multiplex_Screen,movie_certification, first_price_per_ticket ,Number_of_tickets,seat_numbers,Total_amount){
 this.Theatre_name= "PSS" 
 this.multiplex_Screen = "screen 3" 
 this.movie_name = "JVT [ C,CPP] "
@@ -57,7 +57,7 @@ var plex= new Moviee()
 plex.display()
 
 class Creating_Google_Account{
-constructor(){
+constructor(First_Name,Last_Name,Choose_Username,Creat_a_Password,Confirm_Your_Password,Birthday,Gender,Mobile ,Your_current_email_address){
 this.First_Name = "venkatesh"
 this.Last_Name = "d b"
 this.Choose_Username ="jvt"
@@ -77,7 +77,7 @@ var google=new Creating_Google_Account()
 google.display()
 
 class Health_care_Blood_test{
-constructor(){
+constructor(Patient_Name,Patient_ID,Patient_phone,Billno,Age,Date_of_Birth,Gender,Fasting,Patient_Address,Room_No,Date_of_time_Collected_blood,Enter_date,Date_and_Time_Respond){
 this.Patient_Name= "Sathish"
 this.Patient_ID= 10567890890
 this.Patient_phone= "044 222738"
@@ -102,7 +102,7 @@ health.shyam()
 
 
 class Banking_SBI_statement{
-constructor(){
+constructor(Bank_Name,Date,Time,ATM_No,CARD_No,BRANCH_NAME,Txn_No,Response_code,With_Drawl,From_AC,Mod_RS,Available_Bal_Rs,Website){
 this.Bank_Name="SBI Bank"
 this.Date=" 29/05/14"
 this.Time=" 19:48"
@@ -126,7 +126,7 @@ var shaaaa=new Banking_SBI_statement()
 shaaaa.display()
 
 class Appearance_information{
-constructor(){
+constructor(Weight,Hight,Eye_colour,Gender,Home_address,Home_phone,Mobile,State,County){
 this.Weight=55 
 this.Hight=5.8 
 this.Eye_colour="brown "
@@ -143,8 +143,9 @@ document.writeln("<br>","<br>",this.Weight,"<br>",this.Hight,"<br>",this.Eye_col
 }
 var look=new Appearance_information()
 look.display()
+
 class Vehicle_information{
-constructor(){
+constructor(Vehicle_type,vehicle_car_Colour,Engine_number,Chassis_number,Company){
 this.Vehicle_type="light motor"
 this.vehicle_car_Colour="red" 
 this.Engine_number="kp98gtyihh457797 "
@@ -160,7 +161,7 @@ var bmw=new Vehicle_information()
 bmw.display()
 
 class computer_ups_specifications{
-constructor(){
+constructor(modelexide,ip_voltage,ac_frequency,op_voltage,ac_battery_type,battery_capacity,battery_backup,recharge_time,weight){
 this.modelexide="digital600 "
 this.ip_voltage ="230v "
 this.ac_frequency="50hz" 
@@ -179,7 +180,7 @@ var cs=new computer_ups_specifications()
 cs.display()
 
 class Electric_bill_paid_via_netbanking{
-constructor(){
+constructor(website,tnebusername,agilan_password,consumer_number,Billing_status,mode_of_payment,choose_bank,kumar007_password,Transaction_no,vpayment_status){
 
 this.website="www.tnebnet.org "
 this.tnebusername="shaa"
