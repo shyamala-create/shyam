@@ -1,0 +1,917 @@
+let myCar = new Model("Ford", "Mustang");
+document.write(myCar.show())
+
+class SHIPPING_DETAILS{
+constructor(order){
+this.Estimated_Arrival = "9 days";
+this.Return_Policy =" Seller will accept returns within a 15 days from date of delivery of the item"
+}
+present(){
+return this.Estimated_Arrival + this.Return_Policy
+}
+}
+class Shipping extends SHIPPING_DETAILS{
+constructor(order, ship){
+super(order);
+this.Shipping=ship;
+}
+show() {
+    return this.present() + this.Shipping;
+  }
+}
+let myOrder=new Shipping//("9 days"," Seller will accept returns within a 15 days from date of delivery of the item")
+document.writeln("<br>")
+document.write(myOrder.show())
+
+class BATTERY{
+constructor(BatterCapacity){
+this.Nonremovable_LiPo ="1715 mAh battery (6.9 Wh)"
+this.Standby ="Up to 240 h (3G)"
+this.Talktime = "Up to 14 h (3G)"
+this.Musicplay = "Up to 50 h"
+this.NETWORKTechnology = "GSM / CDMA / HSPA / EVDO / LTE"
+}
+present()
+{
+return this.Nonremovable_LiPo + this.Standby + this.Talktime + this.Musicplay + this.NETWORKTechnology ;
+}
+}
+class Battery_life extends BATTERY{
+constructor(charge, hertz){
+super(charge);
+this.hertz=hertz;
+}
+show(){
+return this.Nonremovable_LiPo + this.Standby + this.Talktime + this.Musicplay + this.NETWORKTechnology ;
+}
+}
+let capacityy= new Battery_life;
+document.writeln(capacityy.show())
+
+class Appearance_information{
+constructor(appearance)
+{
+this.Weight="55";
+this.Hight="5.8 ";
+this.Eyecolour="brown"; 
+this.Gender="male";
+this.Homeaddress="#6/96,rajampet,kadapa"; 
+this.Homephone="975545445"; 
+this.Mobile=8553577745; 
+this.State="andhraprsh";
+this.Country="india";
+}
+present()
+{
+return 'The person apperance has' + this.Weight+this.Hight+this.Eyecolour+this.Gender+this.Homeaddress+this.Homephone+this.Mobile+this.State+this.Country;
+}
+}
+
+class info extends Appearance_information
+{
+constructor(appearance)
+{
+super(appearance);
+this.appeararance
+}
+show()
+{
+return this.present();
+}
+}
+let informa=new info();
+document.write("<br>");
+document.write(informa.show())
+
+class Vehicleinformation{
+constructor(vehicle)
+{
+this.Vehicletype="light motor ";
+this.vehicle= "car ";
+this.Colour="red" ;
+this.Enginenumber="kp98gtyihh457797" ;
+this.Chassisnumber="tc5678898335r45 ";
+this.Company="BMW";
+}
+present()
+{
+return 'The vehicle is a' + this.Vehicletype+ 'which is' + this.vehicle+ 'in colour'+this.Colour+this.Enginenumber+this.Chassisnumber+this.Company;
+}
+}
+
+class information extends Vehicleinformation{
+constructor(vehicle)
+{
+super(vehicle);
+this.vehicle=vehicle;
+}
+show()
+{
+return this.present();
+}
+}
+let vehi_info=new information();
+document.writeln("<br>");
+document.writeln(vehi_info.show())
+
+class Car {
+  constructor(brand) {
+    this.carname = brand;
+  }
+  present() {
+    return 'I have a ' + this.carname;
+  }
+}
+
+class Model extends Car {
+  constructor(brand, mod) {
+    super(brand);
+    this.model = mod;
+  }
+  show() {
+    return this.present() + ', it is a ' + this.model;
+  }
+}
+/*class carinsurance
+{   
+      name="Adithyan"
+      address="XYZ"
+      mailid="aj@123"
+      mobno=8478585859
+      policyno=92027
+      preposalno=110771
+      period="14/01/2021 to 21/01/2021"
+      occupation="software engineer"
+      regno= "KL-07-BJ-5044"
+      model="CIVIC"
+      engineno=834
+      cc=2000
+      year=2010
+      seating=5
+      netpremium=20000
+      idv=250000
+      constructor(name:string,address:string,mailid:string,mobno:number)
+  {
+     this.name=name
+     this.address=address
+     this.mailid=mailid
+     this.mobno=mobno
+     this.policy(92027,110711,"14/01/2021 to 21/01/2021","Software engineer")
+ }
+ policy(policyno:number,preposalno:number,period:string,occupation:string)
+ {
+     this.policyno=policyno
+     this.preposalno=preposalno
+     this.period=period
+     this.occupation=occupation
+     this.vehicledetails("KL-07-BJ-5044","CIVIC",10834,2000,2010,5,20000,250000)
+ }
+   //("KL-07-BJ-5044","CIVIC",00834,2000,2010,5,20000,250000) 
+  vehicledetails(regno:string,model:string,engineno:number,cc:number,year:number,seating:number,netpremium:number,idv:number)
+  {
+     this.regno=regno
+     this.model=model
+     this.engineno=engineno
+     this.cc=cc
+     this.year=year
+     this.seating=seating
+     this.netpremium=netpremium
+     this.idv=idv
+     this.validate()
+  }
+  validate()
+  {
+    if(this.engineno==10834)
+    {
+      console.log("Welcome")
+      this.display()
+    }
+  else
+  {
+    document.writeln("Error")
+  }
+   }
+   display()
+   {
+     console.log(this.name)
+     console.log(this.address)
+     console.log(this.mailid)
+     console.log(this.mobno)
+     console.log(this.mailid)
+     console.log(this.mobno)
+     console.log(this.policyno)
+     console.log(this.preposalno)
+     console.log(this.period)
+     console.log(this.occupation)
+     console.log(this.regno)
+     console.log(this.model)
+     console.log(this.engineno)
+     console.log(this.cc)
+     console.log(this.year)
+     console.log(this.seating)
+     console.log(this.netpremium)
+     console.log(this.idv)
+}
+}
+var insurance=new carinsurance("Adithya","XYZ","aj@123",848978433)*/
+
+class carinsurance
+{   
+      name:string="Adithyan"
+      address:string="XYZ"
+      mailid:string="aj@123"
+      mobno:number=8478585859
+      policyno:number=92027
+      preposalno:number=110771
+      period:string="14/01/2021 to 21/01/2021"
+      occupation:string="software engineer"
+      regno:string= "KL-07-BJ-5044"
+      model:string="CIVIC"
+      engineno:number=834
+      cc:number=2000
+      year:number=2010
+      seating:number=5
+      netpremium:number=20000
+      idv:number=250000
+      constructor(name:string,address:string,mailid:string,mobno:number)
+  {
+     this.name=name
+     this.address=address
+     this.mailid=mailid
+     this.mobno=mobno
+     this.policy(92027,110711,"14/01/2021 to 21/01/2021","Software engineer")
+ }
+ policy(policyno:number,preposalno:number,period:string,occupation:string)
+ {
+     this.policyno=policyno
+     this.preposalno=preposalno
+     this.period=period
+     this.occupation=occupation
+     this.vehicledetails("KL-07-BJ-5044","CIVIC",10834,2000,2010,5,20000,250000)
+ }
+   //("KL-07-BJ-5044","CIVIC",00834,2000,2010,5,20000,250000) 
+  vehicledetails(regno:string,model:string,engineno:number,cc:number,year:number,seating:number,netpremium:number,idv:number)
+  {
+     this.regno=regno
+     this.model=model
+     this.engineno=engineno
+     this.cc=cc
+     this.year=year
+     this.seating=seating
+     this.netpremium=netpremium
+     this.idv=idv
+    // this.validate()
+  }
+  validate()
+  {
+    if(this.engineno==10834)
+    {
+      console.log("Welcome")
+      this.display()
+    }
+  else
+  {
+    console.log("Error")
+  }
+   }
+   display()
+   {
+     console.log(this.name)
+     console.log(this.address)
+     console.log(this.mailid)
+     console.log(this.mobno)
+     console.log(this.mailid)
+     console.log(this.mobno)
+     console.log(this.policyno)
+     console.log(this.preposalno)
+     console.log(this.period)
+     console.log(this.occupation)
+     console.log(this.regno)
+     console.log(this.model)
+     console.log(this.engineno)
+     console.log(this.cc)
+     console.log(this.year)
+     console.log(this.seating)
+     console.log(this.netpremium)
+     console.log(this.idv)
+}
+}
+var insurance=new carinsurance("Adithya","XYZ","aj@123",848978433)
+   insurance.validate()
+   
+   class Animal {
+  move(distanceInMeters: number = 0) {
+    console.log(`Animal moved ${distanceInMeters}m.`);
+  }
+}
+
+class Dog extends Animal {
+  bark() {
+    console.log("Woof! Woof!");
+  }
+}
+
+const dog = new Dog();
+dog.bark();
+dog.move(10);
+dog.bark();
+
+class Car {
+  constructor(name) {
+    this.name = name;
+  }
+  static hello() {
+    return "Hello!!";
+  }
+}
+
+let myCar = new Car("Ford");
+class Animal {
+  name: string;
+  constructor(theName: string) {
+    this.name = theName;
+  }
+  move(distanceInMeters: number = 0) {
+    console.log("{this.name} moved ${distanceInMeters}m.`);
+  }
+}
+
+class Snake extends Animal {
+  constructor(name: string) {
+    super(name);
+  }
+  move(distanceInMeters = 5) {
+    console.log("Slithering");
+    super.move(distanceInMeters);
+  }
+}
+
+class Horse extends Animal {
+  constructor(name: string) {
+    super(name);
+  }
+  move(distanceInMeters = 45) {
+    console.log("Galloping...");
+    super.move(distanceInMeters);
+  }
+}
+
+let sam = new Snake("Sammy the Python");
+let tom: Animal = new Horse("Tommy the Palomino");
+
+sam.move();
+tom.move();
+
+class Information{
+constructor(appearance)
+{
+this.Weight="55";
+this.Hight="5.8 ";
+this.Eyecolour="brown"; 
+this.Gender="male";
+this.Homeaddress="#6/96,rajampet,kadapa"; 
+this.Homephone="975545445"; 
+this.Mobile=8553577745; 
+this.State="andhraprsh";
+this.Country="india";
+}
+present()
+{
+return 'The person apperance has' + this.Weight+this.Hight+this.Eyecolour+this.Gender+this.Homeaddress+this.Homephone+this.Mobile+this.State+this.Country;
+}
+}
+
+class info extends Information
+{
+constructor(appearance)
+{
+super(appearance);
+this.appeararance
+}
+show()
+{
+return this.present();
+}
+}
+let informa=new info();
+document.write("<br>");
+document.write(informa.show())
+
+function faredet(dist){
+ditance="323KM"
+    if(dist>=500){
+    return "invalid"
+    }
+ticketfare="Rs.420.00"
+servicecharge="Rs.22.90"
+Totalfare="Rs.442.90"
+return servicecharge
+}
+  var accno= faredet(200)
+if(accno!=undefined){
+document.writeln(servicecharge)  
+}
+
+function passeenger(status){
+name=["venkatesh "," "," naveen RM"]
+	if(name[1]==undefined){
+    return "invalid"
+    }
+age=[27,27,23]
+gender=["make","male","male"]
+seat=[7,8,9]
+return age
+}
+var PD=passeenger("RLWL")
+if(PD!=undefined){
+document.writeln(age[0])
+}
+
+class employee{
+    static address="BTM"
+    constructor(name, mailid, mob)
+    {
+        this.name=name;
+        this.mailid=mailid;
+        this.mob=mob
+    }
+    static address1()
+    {
+        console.log(employee.address)
+    }
+    
+    display()
+    {
+        console.log(this.name)
+        console.log(this.mailid)
+        console.log(this.mob)
+    }
+    set(a)
+    {
+        this.name=a;
+    }
+    get(b)
+    {
+        return this.mailid;
+    }
+}
+var locate=new employee("Ajay", "ajay@gmail.com", 9875534321)
+locate.set("shyamala")
+employee.address1()
+console.log(locate.get())
+locate.display()
+
+let corporate={
+compname:'Intimetec visionsoft ',
+designation:'software engineer',
+salary:'4lakhs 50thousand',
+location:' banglore',
+set applicantset(revised_sal)
+{
+this.salary=revised_sal;
+},
+get ()
+{
+return this.compname;
+}
+}
+corporate.salary='5lakh 50 thousand'
+document.writeln(corporate.salary)
+document.writeln(corporate.compname)
+
+class employee
+{
+ // name="Ram"
+  static address="Btm"
+  constructor(name,mailid,mobno)
+  {
+     this.name=name
+     this.mailid=mailid
+     this.mobno=mobno
+  }
+  static addr()
+  {
+    document.writeln(employee.address)
+  }
+  display()
+  {
+     document.writeln(this.name)
+     document.writeln(this.mailid)
+     document.writeln(this.mobno)
+  }
+  set(a)
+  {
+     this.name=a
+    
+  }
+}
+var k=new employee("Ajay", "ajay@gmail.com",859350584)
+//k.display()
+k.set("Arithra")
+k.display()
+employee.addr()
+
+class company
+{ 
+      //Company_name = "JVT"
+      //Designation="Programmer"
+      //Salary ="2.3 or 230000"
+      static Location =" Bangalore"
+      constructor(Company_name, Designation, Salary){
+           this.Company_name=Company_name
+           this.Designation=Designation
+           this.Salary =Salary
+           }
+           static company1()
+           {
+              document.writeln(company.Location)
+              }
+           display()
+           {
+              document.writeln("<br>")
+              document.writeln(this.company_name)
+              document.writeln("<br>")
+              document.writeln(this.Designation)
+              document.writeln("<br>")
+              document.writeln(this.Salary)
+              document.writeln("<br>")
+              }
+              set(a)
+              {
+              this.company_name=a
+              }
+   }
+   var jvt=new company("JVT", "Programmer", "2.3 or 230000")
+   jvt.set("shyam")
+   jvt.display()
+   company.company1()
+class Request{
+static requestion="mail"
+constructor(from, to, date, subject, mailed-by, signed-by)
+{
+this.from=from 'Siva Prasad <kasi.sivap@gmail.com>'
+this.to=to'D B Venkatesh <venkatesh.db@gmail.com>'
+this.date=date'Fri, Nov 27, 2015 at 12:05 AM'
+this.subject= subject'Request to forward the Resumes'
+this.mailed_by=mailed_by'gmail.com'
+this.signed_by=signed_by"gmail.com"
+}
+static mail()
+{
+document.writeln(Request.
+</script>
+
+class tickdet
+{
+constructor()
+{
+this.trainnumnname="56213 / TIRUPATI PASSR"
+this.datebooking="14-Dec-2015"
+this.class="SLEEPERCLASS"
+}
+dply(name)
+{
+document.writeln(name)
+}
+}
+var varsi=new tickdet()
+//varsi.nxt()
+//varsi.dply()
+function TNJ(callback){
+callback("XXX")
+}
+TNJ(varsi.dply)
+
+
+class Request{
+static requestion="mail"
+constructor(from, to, date, subject, mailedby, signedby)
+{
+this.from=from// 'Siva Prasad <kasi.sivap@gmail.com>'
+this.to=to//'D B Venkatesh <venkatesh.db@gmail.com>'
+this.date=date//'Fri, Nov 27, 2015 at 12:05 AM'
+this.subject= subject//'Request to forward the Resumes'
+this.mailed_by=mailed_by//'gmail.com'
+this.signed_by=signed_by//"gmail.com"
+}
+static mail()
+{
+document.writeln(Request.mail())
+}
+
+display()
+{
+document.writeln(this.from)
+document.writeln(this.to)
+document.writeln(this.date)
+document.writeln(this.subject)
+document.writeln(this.mailed_by)
+document.writeln(this.signed_by)
+}
+set(a)
+{
+this.requestion=a
+}
+var mail=new Request('Siva Prasad <kasi.sivap@gmail.com>','D B Venkatesh <venkatesh.db@gmail.com>','Fri, Nov 27, 2015 at 12:05 AM','Request to forward the Resumes','gmail.com',"gmail.com")
+mail.set();
+mail.display();
+Request.requestion()
+=====================================================Type script=====================================================================================
+
+class employee{
+    static address="BTM"
+    constructor(name, mailid, mob)
+    {
+        this.name=name;
+        this.mailid=mailid;
+        this.mob=mob
+    }
+    static address1()
+    {
+        console.log(employee.address)
+    }
+    
+    display()
+    {
+        console.log(this.name)
+        console.log(this.mailid)
+        console.log(this.mob)
+    }
+    set(a)
+    {
+        this.name=a;
+    }
+    get(b)
+    {
+        return this.mailid;
+    }
+}
+var locate=new employee("Ajay", "ajay@gmail.com", 9875534321)
+locate.set("shyamala")
+employee.address1()
+console.log(locate.get())
+locate.display()     
+
+class company{
+    static name="Intime"
+    constructor(emp_name, designation, years)
+    {
+        this.emp_name=emp_name;
+        this.designation=designation;
+        this.years=years;
+    }
+    static company_name()
+    {
+        console.log(company.name)
+    }
+    display()
+    {
+        console.log(this.emp_name)
+        console.log(this.designation)
+        console.log(this.years)
+    }
+
+    set(n)
+    {
+        this.emp_name=n;
+    }
+
+    get(n)
+    {
+        return this.years;
+    }
+}
+let init=new company("vinit", "software_engineer", "3years")
+company.company_name()
+init.set("shyam")
+init.get()
+init.display()
+//class jvt{
+ //   static name="shyam"
+//}
+
+class Person {
+  protected name: string;
+  constructor(name: string) {
+    this.name = name;
+  }
+}
+
+class Employee extends Person {
+  private department: string;
+
+  constructor(name: string, department: string) {
+    super(name);
+    this.department = department;
+  }
+
+  public getElevatorPitch() {
+    return `Hello, my name is ${this.name} and I work in ${this.department}.`;
+  }
+}
+
+let howard = new Employee("Howard", "Sales");
+console.log(howard.getElevatorPitch());
+console.log(howard.name);
+
+class Octopus {
+  readonly name: string;
+  readonly numberOfLegs: number = 8;
+
+  constructor(theName: string) {
+    this.name = theName;
+  }
+}
+
+let dad = new Octopus("Man with the 8 strong legs");
+dad.name = "Man with the 3-piece suit";
+
+class Employee {
+  fullName: string;
+}
+
+let employee = new Employee();
+
+
+employee.fullName = "Bob Smith";
+
+if (employee.fullName) {
+  console.log(employee.fullName);
+}
+
+const fullNameMaxLength = 10;
+
+class Employee {
+  private _fullName: string = "";
+
+  get fullName(): string {
+    return this._fullName;
+  }
+
+  set fullName(newName: string) {
+    if (newName && newName.length > fullNameMaxLength) {
+      throw new Error("fullName has a max length of " + fullNameMaxLength);
+    }
+
+    this._fullName = newName;
+  }
+}
+
+let employee = new Employee();
+employee.fullName = "Bob Smith";
+
+if (employee.fullName) {
+  console.log(employee.fullName);
+}
+
+class jvt{
+    static name="shyamala"
+    constructor(emp_name, role, exp, ctc, skills)
+    {
+        this.emp_name=emp_name;
+        this.role=role;
+        this.exp=exp;
+        this.ctc=ctc;
+        this.skills=skills;
+    }
+    static techi()
+    {
+        console.log(jvt.techi);
+    }
+    
+    display()
+    {
+        console.log(this.emp_name)
+        console.log(this.role)
+            console.log(this.exp)
+                console.log(this.ctc)
+                    console.log(this.skills)
+    }
+}
+var techno = new jvt("sangavi", "designer", "5yrs", "100000", "c, c++,java" )
+techno.techi()
+techno.display()
+
+
+====================================================inhertence====================================
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var javascript = /** @class */ (function () {
+    function javascript(version) {
+        console.log("javascript constructor");
+        this.langversion = version;
+    }
+    javascript.prototype.oopsprinciple = function () {
+        console.log("javascript constructor");
+    };
+    return javascript;
+}());
+//angular knows the methods & members of javascript
+//javascript knows the  methods of angular in two ways.
+var angular = /** @class */ (function (_super) {
+    __extends(angular, _super);
+    //stack 
+    function angular(langv, angversion) {
+        var _this = this;
+        console.log("angular version");
+        _this = _super.call(this, langv) || this; //go to line3
+        _this.angversion = angversion;
+        return _this;
+    }
+    angular.prototype.oopsprinciple = function () {
+        console.log("angular oopsprinciple");
+    };
+    return angular;
+}(javascript));
+var p = new angular("Ecam v5", 8); //memory[string, number] heap
+//angular constructor
+p.oopsprinciple();
+
+var fullname = "codeseeker";
+var age = 6;
+var list = [1, 2, 3];
+var x;
+x = ["hello", 10];
+function Monday(login, logout) {
+    return login;
+}
+Monday("23", "7.30pm");
+
+var Greeter = /** @class */ (function () {
+    function Greeter(message) {
+        this.greeting = message;
+    }
+    Greeter.prototype.greet = function () {
+        return 23;
+        // return "hello,"+ this.greeting;
+    };
+    return Greeter;
+}());
+var greeter = new Greeter("world");
+//let ret=greeter.greet()
+console.log(ret);
+var greeting = /** @class */ (function () {
+    function greeting(msg) {
+        this.message = msg;
+    }
+    greeting.prototype.display = function () {
+        console.log(this.message);
+    };
+    return greeting;
+}());
+var happynewyear = new greeting("wish to 2021");
+
+
+var Greeter = /** @class */ (function () {
+    function Greeter(message) {
+        this.greeting = message;
+    }
+    Greeter.prototype.greet = function () {
+        return 23;
+        // return "hello,"+ this.greeting;
+    };
+    return Greeter;
+}());
+var greeter = new Greeter("world");
+//let ret=greeter.greet()
+console.log(ret);
+var greeting = /** @class */ (function () {
+    function greeting(msg) {
+        this.message = msg;
+    }
+    greeting.prototype.display = function () {
+        console.log(this.message);
+    };
+    return greeting;
+}());
+var happynewyear = new greeting("wish to 2021");
+
+class Grid {
+  static origin = { x: 0, y: 0 };
+
+  calculateDistanceFromOrigin(point: { x: number; y: number }) {
+    let xDist = point.x - Grid.origin.x;
+    let yDist = point.y - Grid.origin.y;
+    return Math.sqrt(xDist * xDist + yDist * yDist) / this.scale;
+  }
+
+  constructor(public scale: number) {}
+}
+
+let grid1 = new Grid(1.0); // 1x scale
+let grid2 = new Grid(5.0); // 5x scale
+
+console.log(grid1.calculateDistanceFromOrigin({ x: 10, y: 10 }));
+console.log(grid2.calculateDistanceFromOrigin({ x: 10, y: 10 }));
