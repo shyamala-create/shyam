@@ -1,4 +1,62 @@
-<script>
+		    Learning:- Array Data structures, and data validations, classes and methods.
+                    challenges:- Got some errors in validation part and cleared.
+                    Total :- 350 lines of code completed
+                               (18th jan 2021)
+                    working hours:- 6hrs
+=======================================================================================================================
+//////////arrray data structure
+let arrray = [112345, 11112345, "10.45.67.8"]
+document.writeln('<br>')
+document.writeln('<br>')
+document.writeln(arr[0])
+
+for(i=0; i<arr.length; i++)
+{
+document.writeln("loop"+arr[i])
+}
+========================================================================================================================
+let jvt=["Name : JVT", "Age : 5", "Gender : Male", "Email Address : info@jvtechnologies.co.in","Photo ID Card : Voter Id or Ration card ..","ID Card No : ASUPB590F"]
+document.writeln('<br>')
+document.writeln('<br>')
+document.writeln(jvt[0], jvt[1], jvt[2], jvt[3])
+
+for(i=0; i<jvt.length; i++)
+{
+document.writeln(jvt[i])
+}
+===========================================================================================================================
+let name_format=["Last name: kumar", "First name: Pavan", "Middle name:Bijjavaram", "Driver's license number:ka50201500006939", "Driver's license state:karnataka", "Drivers license country:india", "Civilian type: around india", "Employee type:software engineer", "Date of birth:12-07-1992", "City of birth:rajampet"]
+document.writeln('<br>')
+document.writeln('<br>')
+document.writeln(name_format[0])
+document.writeln('<br>')
+for(i=0; i<name_format.length; i++)
+{
+document.writeln(name_format[i])
+}
+===============================================================================================================================
+let Appearance_information=["Weight:55", "Hight:5.8", "Eye colour:brown", "Gender:male", "Home address:#6/96","rajampet","kadapa", "Home phone:975545445", "Mobile:8553577745", "State:andhrapradesh", "County:india"]
+document.writeln('<br>')
+document.writeln('<br>')
+document.writeln(Appearance_information[0])
+document.writeln('<br>')
+for(i=0; i<Appearance_information.length; i++)
+{
+document.writeln(Appearance_information[i])
+}
+==================================================================================================================================
+let Vehicle_information=["Vehicle type:light motor", "vehicle- car", "Colour:red", "Engine number:kp98gtyihh457797", "Chassis number:tc5678898335r45", "Company:BMW"]
+document.writeln('<br>')
+document.writeln('<br>')
+document.writeln(Vehicle_information[0])
+document.writeln('<br>')
+for(i=0; i<Vehicle_information.length; i++)
+{
+document.writeln(Vehicle_information[i])
+}
+=======================================================================================================================================
+////////data validationsssss
+
 function passeenger(status){
 name=["venkatesh "," "," naveen RM"]
 	if(name[1]==undefined){
@@ -27,10 +85,139 @@ function DataScience(callback){
 }
 
 DataScience(AI) //Line 7 
+=================================================================================================================
 
+function faredet(dist){
+ditance="323KM"
+    if(dist>=500){
+    return "invalid"
+    }
+ticketfare="Rs.420.00"
+servicecharge="Rs.22.90"
+Totalfare="Rs.442.90"
+return servicecharge
+}
+var accno= faredet(200)
+if(accno!=undefined){
+document.writeln(servicecharge)  
+}
+=======================================================================================================================================
+class flight
+   {
+     constructor(flightname,flightno)
+     {
+       this.flightname=flightname
+       this.flightno=flightno
+       this.info(100038,41150,"1/1/2021","Business Class","Premium")
+     }
+     info(id,no,date,time,clas,quota)
+     {
+          this.id=id
+          this.no=no
+          this.date=date
+          this.time=time
+          this.clas=clas
+          this.quota=quota
+          if(this.id==100038)
+          {
+            document.writeln("Your ticket details are")
+            this.details("Adithyan","Male","aj@123","COK","MLB")
+          }
+          else
+          {
+            document.writeln("Error in ticket no try again!!")
+          }
+     }
+     details(name,gender,mailid,from,to)
+      {
+         this.name=name
+         this.gender=gender
+         this.mailid=mailid
+         this.from=from
+         this.to=to
+         if(mailid=="aj@123")
+         {
+          //document.writeln("Wish you a happy and safe journey")
+          this.display()
+        }
+        else
+        {
+          document.writeln("Error try again!!")
+        }
+        }
+      display()
+      {
+       
+       document.writeln(this.flightname)
+       document.writeln(this.flightno)
+       document.writeln(this.id)
+       document.writeln(this.no)
+       document.writeln(this.date)
+       document.writeln(this.time)
+       document.writeln(this.clas)
+       document.writeln(this.quota)
+       document.writeln(this.name)
+       document.writeln(this.gender)
+       document.writeln(this.mailid)
+       document.writeln(this.from)
+       document.writeln(this.to)
+       document.writeln("Wish you a happy and safe journey")
+      }
+    }
+    var f=new flight("Air India",3664)
+==================================================================================================================================
+    let system=
+   {
+     rating:"4.5",
+     processor:"Intelcorei5",
+     ram:"4GB",
+   spec(type,name,description)
+   {
+      this.type=type
+      this.name=name
+      this.description=description
+      this.osdetails("Windows",10,8051)
+   },
+   osdetails(os,version,id)
+   {
+     this.os=os
+     this.version=version
+     this.id=id
+     this.validate()
+   },
+   validate()
+   {
+     if(this.id==8051)
+     {
+       document.writeln("<br\>Veraion details are:")
+       this.display()
+     }
+       else
+       {
+         document.writeln("Error in version id")
+       }
+   },
+   display()
+   {
+    
+     document.write(this.rating)
+     document.write(this.processor)
+     document.write(this.ram)
+     document.write(this.type)
+     document.write(this.name)
+     document.write(this.description)
+     document.write(this.os)
+     document.write(this.version)
+    document.write(this.id)
+
+    }
+   }
+   system.spec("<br/>64Bit","<br/>hp","<br/>workgroup")
+    
+=============================================================================================================================
 class tickdet
 {
-constructor()
+constructor(trainnumnname,datebooking,class)
 {
 this.trainnumnname="56213 / TIRUPATI PASSR"
 this.datebooking="14-Dec-2015"
@@ -49,7 +236,7 @@ function TNJ(callback){
 callback("XXX")
 }
 TNJ(varsi.dply)
-
+=============================================================================================================
 class License{
 constructor()
 {
@@ -69,148 +256,14 @@ dispaly()
 document.write(Lastname)
 }
 }
+==================================================================================================================
 
-</script>
-<!-- edit your html here -->
-
-
-------------------------------------------------------------------------------------------------------------------------------
-
-<script>
-
-//////Object data structuree
-let netconnect = {
-                accno :112345,
-                broadbandid : "11112345",
-                ipaddess:"10.45.67.8"
-                }
-document.writeln(netconnect.accno)
-
-let arr = [112345, 11112345, "10.45.67.8"]
-document.writeln(arr[0])
-
-for(i=0; i<arr.length; i++)
-{
-document.writeln("loop"+arr[i])
-}
-
-let company={
-name:"jai venkateswara technologies",
-education:"M.E",
-date_of_birth:"7/6/96",
-communication_address:"thippasandara",
-reference_no:0578674673,
-email:"shyam@jvt.com",
-total_exp:"1 year",
-skill:"c, c++, java",
-manager:"venkatesh",
-pancard:"asuru237",
-}
-document.writeln('<br>',company.name,'<br>', company.education,'<br>', company.date_of_birth,'<br>', company.communication_address,'<br>', company.reference_no,'<br>', company.email,'<br>', company.total_exp,'<br>', company.skill, '<br>', company.manager,'<br>', company.pancard)
-
-let technology={
-Name : "Jai Venkateswara Technologies",
-Educational_Qualification : "B TECH MCA MBA BSC MSC",
-Date_Of_Birth : "2/6/1988",
-Communication_Address : "233/3 Ground floor new thippasandra",
-Residence_Number : 08025216666,
-Mobile : 9900367097,
-Email : "venkatesh.db@gmail.com",
-Total_Exp : "1 years",
-Skill_Relevant_Experience : "C,CPP all Lang & 1 years",
-Reporting_Manager : "Venkatesh",
-PANCARD_NO : "asu675901f",
-}
-document.writeln('<br>',technology.Name,'<br>',technology.Educational_Qualification,'<br>',technology.Date_Of_Birth,'<br>',technology.Communication_Address,'<br>',technology.Residence_Number ,'<br>',technology.Mobile,'<br>',technology.Email,'<br>',technology.Total_Exp,'<br>',technology.Skill_Relevant_Experience,'<br>',technology.Reporting_Manager ,'<br>',technology.PANCARD_NO)
-
-let Bank={
-Account_No: 1135497,
-Broadband_User_ID : 11128550,
-IP_Address: "10.245.97.123",
-}
-document.writeln('<br>','<br>',Bank.Account_No,'<br>',Bank.Broadband_User_ID,'<br>',Bank.IP_Address)
-
-let temple={
-Day : "Tuesday",
-Time : "3.30 am",
-Per_Slot_Tickets : 2000,
-Booking_No : "IS151110080016",
-Name_of_the_Pilgrim: "venkatesh",
-Order_No : 010600013554,
-Email : "venkateshprofessional7@gmail.com",
-Amount_in_figures: "220.00",
-Proof_of_ID:"Aadhaar Card 733498928758",
-Booked_Date_Time: "11062015 11:36:46",
-No_of_Persons: 1,
-Name_of_the_Seva_Darshan : "Archana",
-Reporting_Time : "4:00 AM",
-Performance_Date_Time : "12012015 AM 4:30:00",
-Privileges_tothe_Seva : "Two Small Laddu",
-Booked_Time:" 11:36:46",
-Accommodation_Type : "Rs 500 Tirumala",
-Available : 350,
-No_of_Tickets : 1,
-Rate : "50 to 2000",
-}
-document.writeln('<br>', '<br>', temple.Day,'<br>', temple.Time,'<br>', temple.Per_Slot_Tickets,'<br>', temple.Booking_No ,'<br>', temple.No_of_Persons,'<br>',temple.Available, '<br>',temple.Name_of_the_Seva_Darshan,'<br>', temple.Reporting_Time,'<br>', temple.Performance_Date_Time,'<br>', temple.Privileges_tothe_Seva,'<br>', temple.Booked_Time,'<br>', temple.Accommodation_Type ,'<br>', temple.No_of_Tickets,'<br>', temple.Rate)
-
-
-//////////arrray data structure
-let arrray = [112345, 11112345, "10.45.67.8"]
-document.writeln('<br>')
-document.writeln('<br>')
-document.writeln(arr[0])
-
-for(i=0; i<arr.length; i++)
-{
-document.writeln("loop"+arr[i])
-}
-
-let jvt=["Name : JVT", "Age : 5", "Gender : Male", "Email Address : info@jvtechnologies.co.in","Photo ID Card : Voter Id or Ration card ..","ID Card No : ASUPB590F"]
-document.writeln('<br>')
-document.writeln('<br>')
-document.writeln(jvt[0], jvt[1], jvt[2], jvt[3])
-
-for(i=0; i<jvt.length; i++)
-{
-document.writeln(jvt[i])
-}
-
-let name_format=["Last name: kumar", "First name: Pavan", "Middle name:Bijjavaram", "Driver's license number:ka50201500006939", "Driver's license state:karnataka", "Drivers license country:india", "Civilian type: around india", "Employee type:software engineer", "Date of birth:12-07-1992", "City of birth:rajampet"]
-document.writeln('<br>')
-document.writeln('<br>')
-document.writeln(name_format[0])
-document.writeln('<br>')
-for(i=0; i<name_format.length; i++)
-{
-document.writeln(name_format[i])
-}
-
-let Appearance_information=["Weight:55", "Hight:5.8", "Eye colour:brown", "Gender:male", "Home address:#6/96","rajampet","kadapa", "Home phone:975545445", "Mobile:8553577745", "State:andhrapradesh", "County:india"]
-document.writeln('<br>')
-document.writeln('<br>')
-document.writeln(Appearance_information[0])
-document.writeln('<br>')
-for(i=0; i<Appearance_information.length; i++)
-{
-document.writeln(Appearance_information[i])
-}
-
-let Vehicle_information=["Vehicle type:light motor", "vehicle- car", "Colour:red", "Engine number:kp98gtyihh457797", "Chassis number:tc5678898335r45", "Company:BMW"]
-document.writeln('<br>')
-document.writeln('<br>')
-document.writeln(Vehicle_information[0])
-document.writeln('<br>')
-for(i=0; i<Vehicle_information.length; i++)
-{
-document.writeln(Vehicle_information[i])
-}
 
 //map data structure
 //let arr1= new map()
 //arr1.set("c", 1) //set is a method which add datas in data structure
 //arr1.get("c")
-
+================================================================================================================
 let shyam={
            company:"jvt",
            exp:14,
@@ -221,7 +274,7 @@ let shyam={
                }
           }
 shyam.verifytrainer()
-
+==================================================================================================================
 let swamy={
 Day : "Tuesday",
 Time : "3.30 am",
@@ -250,7 +303,7 @@ document.writeln('<br>', '<br>', this.Day,'<br>', this.Time,'<br>', this.Per_Slo
 }
 swamy.samy_darshan()
 
-
+================================================================================================================================================
 let Electric_bill_paid_via_netbanking={
 website:"www.tnebnet.org ",
 tnebusername:"shaa",
@@ -291,5 +344,5 @@ document.writeln("<br>")
 }
 Electric_bill_paid_via_netbanking.Bill()
 
+===============================================================================================================================
 
-</script>
