@@ -1,0 +1,295 @@
+<script>
+function passeenger(status){
+name=["venkatesh "," "," naveen RM"]
+	if(name[1]==undefined){
+    return "invalid"
+    }
+age=[27,27,23]
+gender=["make","male","male"]
+seat=[7,8,9]
+return age
+}
+var PD=passeenger("RLWL")
+if(PD!=undefined){
+document.writeln(age[0])
+}
+function TNJ(callback){
+callback("RLWL")
+}
+TNJ(passeenger)
+
+function AI(identifyface, automation){
+	document.write(identifyface, "<br>", automation)
+}
+
+function DataScience(callback){
+	callback("intimeteclogo", "attendance")
+}
+
+DataScience(AI) //Line 7 
+
+class tickdet
+{
+constructor()
+{
+this.trainnumnname="56213 / TIRUPATI PASSR"
+this.datebooking="14-Dec-2015"
+this.class="SLEEPERCLASS"
+}
+dply(name)
+{
+document.writeln("<br>")
+document.writeln(name)
+}
+}
+var varsi=new tickdet()
+//varsi.nxt()
+//varsi.dply()
+function TNJ(callback){
+callback("XXX")
+}
+TNJ(varsi.dply)
+
+class License{
+constructor()
+{
+this.Lastname="kumar"
+this.Firstname= "Pavan Middle"
+this.name="Bijjavaram"
+this.Drivers_license_number="ka50201500006939 "
+this.state="karnataka"
+this.Drivers_license country="india"
+this.Civilian_type=" around india "
+this.Employee_type="software engineer"
+this.Date_of_birth="12-07-1992"
+this.City_of_birth="rajampet"
+}
+dispaly()
+{
+document.write(Lastname)
+}
+}
+
+</script>
+<!-- edit your html here -->
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+<script>
+
+//////Object data structuree
+let netconnect = {
+                accno :112345,
+                broadbandid : "11112345",
+                ipaddess:"10.45.67.8"
+                }
+document.writeln(netconnect.accno)
+
+let arr = [112345, 11112345, "10.45.67.8"]
+document.writeln(arr[0])
+
+for(i=0; i<arr.length; i++)
+{
+document.writeln("loop"+arr[i])
+}
+
+let company={
+name:"jai venkateswara technologies",
+education:"M.E",
+date_of_birth:"7/6/96",
+communication_address:"thippasandara",
+reference_no:0578674673,
+email:"shyam@jvt.com",
+total_exp:"1 year",
+skill:"c, c++, java",
+manager:"venkatesh",
+pancard:"asuru237",
+}
+document.writeln('<br>',company.name,'<br>', company.education,'<br>', company.date_of_birth,'<br>', company.communication_address,'<br>', company.reference_no,'<br>', company.email,'<br>', company.total_exp,'<br>', company.skill, '<br>', company.manager,'<br>', company.pancard)
+
+let technology={
+Name : "Jai Venkateswara Technologies",
+Educational_Qualification : "B TECH MCA MBA BSC MSC",
+Date_Of_Birth : "2/6/1988",
+Communication_Address : "233/3 Ground floor new thippasandra",
+Residence_Number : 08025216666,
+Mobile : 9900367097,
+Email : "venkatesh.db@gmail.com",
+Total_Exp : "1 years",
+Skill_Relevant_Experience : "C,CPP all Lang & 1 years",
+Reporting_Manager : "Venkatesh",
+PANCARD_NO : "asu675901f",
+}
+document.writeln('<br>',technology.Name,'<br>',technology.Educational_Qualification,'<br>',technology.Date_Of_Birth,'<br>',technology.Communication_Address,'<br>',technology.Residence_Number ,'<br>',technology.Mobile,'<br>',technology.Email,'<br>',technology.Total_Exp,'<br>',technology.Skill_Relevant_Experience,'<br>',technology.Reporting_Manager ,'<br>',technology.PANCARD_NO)
+
+let Bank={
+Account_No: 1135497,
+Broadband_User_ID : 11128550,
+IP_Address: "10.245.97.123",
+}
+document.writeln('<br>','<br>',Bank.Account_No,'<br>',Bank.Broadband_User_ID,'<br>',Bank.IP_Address)
+
+let temple={
+Day : "Tuesday",
+Time : "3.30 am",
+Per_Slot_Tickets : 2000,
+Booking_No : "IS151110080016",
+Name_of_the_Pilgrim: "venkatesh",
+Order_No : 010600013554,
+Email : "venkateshprofessional7@gmail.com",
+Amount_in_figures: "220.00",
+Proof_of_ID:"Aadhaar Card 733498928758",
+Booked_Date_Time: "11062015 11:36:46",
+No_of_Persons: 1,
+Name_of_the_Seva_Darshan : "Archana",
+Reporting_Time : "4:00 AM",
+Performance_Date_Time : "12012015 AM 4:30:00",
+Privileges_tothe_Seva : "Two Small Laddu",
+Booked_Time:" 11:36:46",
+Accommodation_Type : "Rs 500 Tirumala",
+Available : 350,
+No_of_Tickets : 1,
+Rate : "50 to 2000",
+}
+document.writeln('<br>', '<br>', temple.Day,'<br>', temple.Time,'<br>', temple.Per_Slot_Tickets,'<br>', temple.Booking_No ,'<br>', temple.No_of_Persons,'<br>',temple.Available, '<br>',temple.Name_of_the_Seva_Darshan,'<br>', temple.Reporting_Time,'<br>', temple.Performance_Date_Time,'<br>', temple.Privileges_tothe_Seva,'<br>', temple.Booked_Time,'<br>', temple.Accommodation_Type ,'<br>', temple.No_of_Tickets,'<br>', temple.Rate)
+
+
+//////////arrray data structure
+let arrray = [112345, 11112345, "10.45.67.8"]
+document.writeln('<br>')
+document.writeln('<br>')
+document.writeln(arr[0])
+
+for(i=0; i<arr.length; i++)
+{
+document.writeln("loop"+arr[i])
+}
+
+let jvt=["Name : JVT", "Age : 5", "Gender : Male", "Email Address : info@jvtechnologies.co.in","Photo ID Card : Voter Id or Ration card ..","ID Card No : ASUPB590F"]
+document.writeln('<br>')
+document.writeln('<br>')
+document.writeln(jvt[0], jvt[1], jvt[2], jvt[3])
+
+for(i=0; i<jvt.length; i++)
+{
+document.writeln(jvt[i])
+}
+
+let name_format=["Last name: kumar", "First name: Pavan", "Middle name:Bijjavaram", "Driver's license number:ka50201500006939", "Driver's license state:karnataka", "Drivers license country:india", "Civilian type: around india", "Employee type:software engineer", "Date of birth:12-07-1992", "City of birth:rajampet"]
+document.writeln('<br>')
+document.writeln('<br>')
+document.writeln(name_format[0])
+document.writeln('<br>')
+for(i=0; i<name_format.length; i++)
+{
+document.writeln(name_format[i])
+}
+
+let Appearance_information=["Weight:55", "Hight:5.8", "Eye colour:brown", "Gender:male", "Home address:#6/96","rajampet","kadapa", "Home phone:975545445", "Mobile:8553577745", "State:andhrapradesh", "County:india"]
+document.writeln('<br>')
+document.writeln('<br>')
+document.writeln(Appearance_information[0])
+document.writeln('<br>')
+for(i=0; i<Appearance_information.length; i++)
+{
+document.writeln(Appearance_information[i])
+}
+
+let Vehicle_information=["Vehicle type:light motor", "vehicle- car", "Colour:red", "Engine number:kp98gtyihh457797", "Chassis number:tc5678898335r45", "Company:BMW"]
+document.writeln('<br>')
+document.writeln('<br>')
+document.writeln(Vehicle_information[0])
+document.writeln('<br>')
+for(i=0; i<Vehicle_information.length; i++)
+{
+document.writeln(Vehicle_information[i])
+}
+
+//map data structure
+//let arr1= new map()
+//arr1.set("c", 1) //set is a method which add datas in data structure
+//arr1.get("c")
+
+let shyam={
+           company:"jvt",
+           exp:14,
+           location:"banglr",
+           verifytrainer()
+               {
+                document.write(this.company)
+               }
+          }
+shyam.verifytrainer()
+
+let swamy={
+Day : "Tuesday",
+Time : "3.30 am",
+Per_Slot_Tickets : 2000,
+Booking_No : "IS151110080016",
+Name_of_the_Pilgrim: "venkatesh",
+Order_No : 010600013554,
+Email : "venkateshprofessional7@gmail.com",
+Amount_in_figures: "220.00",
+Proof_of_ID:"Aadhaar Card 733498928758",
+Booked_Date_Time: "11062015 11:36:46",
+No_of_Persons: 1,
+Name_of_the_Seva_Darshan : "Archana",
+Reporting_Time : "4:00 AM",
+Performance_Date_Time : "12012015 AM 4:30:00",
+Privileges_tothe_Seva : "Two Small Laddu",
+Booked_Time:" 11:36:46",
+Accommodation_Type : "Rs 500 Tirumala",
+Available : 350,
+No_of_Tickets : 1,
+Rate : "50 to 2000",
+samy_darshan()
+{
+document.writeln('<br>', '<br>', this.Day,'<br>', this.Time,'<br>', this.Per_Slot_Tickets,'<br>', this.Booking_No ,'<br>', this.No_of_Persons,'<br>')
+}
+}
+swamy.samy_darshan()
+
+
+let Electric_bill_paid_via_netbanking={
+website:"www.tnebnet.org ",
+tnebusername:"shaa",
+agilan_password:"1234567 ",
+consumer_number:23456123,
+Billing_status:"paid/unpaid ",
+mode_of_payment :"netbanking",
+choose_bank:"sbi username",
+kumar007_password:"1234567 ",
+Transaction_no:"18cv21828578437",
+vpayment_status:" successful",
+
+Bill()
+{
+document.writeln("<br>")
+document.writeln("<br>")
+document.writeln(this.website)
+document.writeln("<br>")
+document.writeln(this.tnebusername)
+document.writeln("<br>")
+document.writeln(this.agilan_password)
+document.writeln("<br>")
+document.writeln(this.consumer_number)
+document.writeln("<br>")
+document.writeln(this.Billing_status)
+document.writeln("<br>")
+document.writeln(this.mode_of_payment )
+document.writeln("<br>")
+document.writeln(this.choose_bank)
+document.writeln("<br>")
+document.writeln(this.kumar007_password)
+document.writeln("<br>")
+document.writeln(this.Transaction_no)
+document.writeln("<br>")
+document.writeln(this.vpayment_status)
+document.writeln("<br>")
+}
+}
+Electric_bill_paid_via_netbanking.Bill()
+
+
+</script>
