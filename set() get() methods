@@ -1,0 +1,104 @@
+let corpooffer={
+compname:'JVT ',
+desig:' Programmer',
+salary:' Rs.230000',
+location:' banglore',
+set applicantset(CMPname)
+{
+this.compname=CMPname
+},
+get ()
+{
+return this.salary
+}
+}
+corpooffer.compname='Jai Venkateshwara Technologies'
+document.writeln(corpooffer.compname)
+document.writeln(corpooffer.salary)
+
+class employee{
+    static address="BTM"
+    constructor(name, mailid, mob)
+    {
+        this.name=name;
+        this.mailid=mailid;
+        this.mob=mob
+    }
+    static address1()
+    {
+        console.log(employee.address)
+    }
+    
+    display()
+    {
+        console.log(this.name)
+        console.log(this.mailid)
+        console.log(this.mob)
+    }
+    set(a)
+    {
+        this.name=a;
+    }
+    get(b)
+    {
+        return this.mailid;
+    }
+}
+var locate=new employee("Ajay", "ajay@gmail.com", 9875534321)
+locate.set("shyamala")
+employee.address1()
+console.log(locate.get())
+locate.display()
+
+class company{
+    static name="Intime"
+    constructor(emp_name, designation, years)
+    {
+        this.emp_name=emp_name;
+        this.designation=designation;
+        this.years=years;
+    }
+    static company_name()
+    {
+        console.log(company.name)
+    }
+    display()
+    {
+        console.log(this.emp_name)
+        console.log(this.designation)
+        console.log(this.years)
+    }
+
+    set(n)
+    {
+        this.emp_name=n;
+    }
+
+    get(n)
+    {
+        return this.years;
+    }
+}
+let init=new company("vinit", "software_engineer", "3years")
+company.company_name()
+init.set("shyam")
+init.get()
+init.display()
+
+let corporate={
+compname:'Intimetec visionsoft ',
+designation:'software engineer',
+salary:'4lakhs 50thousand',
+location:' banglore',
+set applicantset(revised_sal)
+{
+this.salary=revised_sal;
+},
+get ()
+{
+return this.compname;
+}
+}
+corporate.salary='5lakh 50 thousand'
+document.writeln(corporate.salary)
+document.writeln(corporate.compname)
