@@ -1,40 +1,60 @@
-<script>
-accno =112345
-broadbandid= 11112345
-ipaddess="10.45.67.8"
+                    Learning:- Object Data structures, classes and methods.
+                    challenges:- confusions in Map data structure
+                    Total :- 500 lines of mission code completed
+                               (16th and 17th jan 2021)
+                    working hours:- 8hrs
 
-let redbus={
-        fromcity:"banglr",
-        onward: "20th jan 2021",
-        }
+==========================================================================================================================================
+//object data structures
 
-let ola ={
-               from :"BTM",
-               to: "silkboard",
-               requestride()
-               {
-               
-               },
-               receivedriver(){
-               }
-               }
-class uber{
-from ="BTM"
-to= "silkboard"
-requestride()
-{
-               
+let technology={
+Name : "Jai Venkateswara Technologies",
+Educational_Qualification : "B TECH MCA MBA BSC MSC",
+Date_Of_Birth : "2/6/1988",
+Communication_Address : "233/3 Ground floor new thippasandra",
+Residence_Number : 08025216666,
+Mobile : 9900367097,
+Email : "venkatesh.db@gmail.com",
+Total_Exp : "1 years",
+Skill_Relevant_Experience : "C,CPP all Lang & 1 years",
+Reporting_Manager : "Venkatesh",
+PANCARD_NO : "asu675901f",
 }
-receivedriver(){
-               }
+document.writeln('<br>',technology.Name,'<br>',technology.Educational_Qualification,'<br>',technology.Date_Of_Birth,'<br>',technology.Communication_Address,'<br>',technology.Residence_Number ,'<br>',technology.Mobile,'<br>',technology.Email,'<br>',technology.Total_Exp,'<br>',technology.Skill_Relevant_Experience,'<br>',technology.Reporting_Manager ,'<br>',technology.PANCARD_NO)
+==============================================================================================================================
+let Bank={
+Account_No: 1135497,
+Broadband_User_ID : 11128550,
+IP_Address: "10.245.97.123",
 }
-let payment={
-mobno:979384786
-order id:mmj98745
-transid:FCSjijr0938478764765
-amount: 300
-}
+document.writeln('<br>','<br>',Bank.Account_No,'<br>',Bank.Broadband_User_ID,'<br>',Bank.IP_Address)
 
+===============================================================================================================================
+let temple={
+Day : "Tuesday",
+Time : "3.30 am",
+Per_Slot_Tickets : 2000,
+Booking_No : "IS151110080016",
+Name_of_the_Pilgrim: "venkatesh",
+Order_No : 010600013554,
+Email : "venkateshprofessional7@gmail.com",
+Amount_in_figures: "220.00",
+Proof_of_ID:"Aadhaar Card 733498928758",
+Booked_Date_Time: "11062015 11:36:46",
+No_of_Persons: 1,
+Name_of_the_Seva_Darshan : "Archana",
+Reporting_Time : "4:00 AM",
+Performance_Date_Time : "12012015 AM 4:30:00",
+Privileges_tothe_Seva : "Two Small Laddu",
+Booked_Time:" 11:36:46",
+Accommodation_Type : "Rs 500 Tirumala",
+Available : 350,
+No_of_Tickets : 1,
+Rate : "50 to 2000",
+}
+document.writeln('<br>', '<br>', temple.Day,'<br>', temple.Time,'<br>', temple.Per_Slot_Tickets,'<br>', temple.Booking_No ,'<br>', temple.No_of_Persons,'<br>',temple.Available, '<br>',temple.Name_of_the_Seva_Darshan,'<br>', temple.Reporting_Time,'<br>', temple.Performance_Date_Time,'<br>', temple.Privileges_tothe_Seva,'<br>', temple.Booked_Time,'<br>', temple.Accommodation_Type ,'<br>', temple.No_of_Tickets,'<br>', temple.Rate)
+
+================================================================================================================================
 //object data_structure
 let netconnect = {
                 accno :112345
@@ -55,7 +75,7 @@ let arr1= new map()
 arr1.set("c", 1) //set is a method which add datas in data structure
 arr1.get("c")
 
-
+=======================================================================================================================================
 class intimetec{
 }
 let time=new intimetec()
@@ -115,9 +135,9 @@ let work={
                }
           }
 work.verifytrainer()
-</script>
-<script>
 
+<script>
+===========================================================================================================================
 class employe{
 constructor(){
 this.Name ="Jai Venkateswara Technologies"
@@ -135,7 +155,7 @@ document.writeln(this.Name, '<br>',this.EducationalQualification,'<br>',this.Dat
 }
 }
 new employe()
-
+==============================================================================================================================
 class system_properties{
 constructor(){
 this.Rating = "4.5"
@@ -154,7 +174,7 @@ document.write(this.Rating, '<br>',this.Processor,'<br>',this.Installed_Memory_R
 }
 var laptop = new system_properties()
 laptop.display()
-
+================================================================================================================================
 class Moviee{
 constructor(){
 this.Theatre_name= "PSS" 
@@ -173,7 +193,7 @@ document.writeln('<br>','<br>',this.Theatre_name,'<br>',this.multiplex_Screen,'<
 }
 var plex= new Moviee()
 plex.display()
-
+====================================================================================================================================
 class Creating_Google_Account{
 constructor(){
 this.First_Name = "venkatesh"
@@ -193,7 +213,7 @@ document.writeln('<br>','<br>',this.First_Name,'<br>',this.Last_Name,'<br>',this
 }
 var google=new Creating_Google_Account()
 google.display()
-
+======================================================================================================================================
 class Health_care_Blood_test{
 constructor(){
 this.Patient_Name= "Sathish"
@@ -218,7 +238,7 @@ var health=new Health_care_Blood_test()
 health.shyam()
 //document.writeln(this.Patient_Name)
 
-
+===============================================================================================================================================
 class Banking_SBI_statement{
 constructor(){
 this.Bank_Name="SBI Bank"
@@ -242,7 +262,7 @@ document.writeln("<br>","<br>",this.Bank_Name,"<br>",this.BRANCH_NAME)
 }
 var shaaaa=new Banking_SBI_statement()
 shaaaa.display()
-
+===================================================================================================================================================
 class Appearance_information{
 constructor(){
 this.Weight=55 
@@ -261,6 +281,8 @@ document.writeln("<br>","<br>",this.Weight,"<br>",this.Hight,"<br>",this.Eye_col
 }
 var look=new Appearance_information()
 look.display()
+
+=========================================================================================================================================
 class Vehicle_information{
 constructor(){
 this.Vehicle_type="light motor"
@@ -277,6 +299,7 @@ document.writeln("<br>","<br>",this.Vehicle_type,"<br>",this.vehicle_car_Colour,
 var bmw=new Vehicle_information()
 bmw.display()
 
+==============================================================================================================================================
 class computer_ups_specifications{
 constructor(){
 this.modelexide="digital600 "
@@ -295,7 +318,7 @@ document.writeln("<br>","<br>",this.modelexide,"<br>",this.ip_voltage,"<br>",thi
 }
 var cs=new computer_ups_specifications()
 cs.display()
-
+==================================================================================================================================================
 class Electric_bill_paid_via_netbanking{
 constructor(){
 
@@ -340,7 +363,7 @@ var Bill=new Electric_bill_paid_via_netbanking()
 Bill.display()
 
 
-
+==========================================================================================================================================
 
 
 class intimetec{
@@ -402,7 +425,7 @@ let work={
                }
           }
 work.verifytrainer()
-
+=================================================================================================================================
 class flight
    {
      constructor(flightname,flightno)
@@ -466,4 +489,5 @@ class flight
       }
     }
     var f=new flight("Air India",3664)
+
 </script>
