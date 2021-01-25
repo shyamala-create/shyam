@@ -138,3 +138,30 @@ mail.set();
 mail.display();
 Request.requestion()
 
+class data
+{
+  static address="jaipur"
+  constructor(web,mobno)
+  {
+     this.web=web
+     this.mobno=mobno
+  }
+  static addr()
+  {
+    document.writeln(data.address)
+  }
+  display()
+  {
+     document.writeln(this.name)
+     document.writeln(this.web)
+     document.writeln(this.mobno)
+  }
+  set(a)
+  {
+     this.name=a
+  }
+}
+var k=new employee("www.intime.com",8593657465)
+//k.display()
+k.set("intime")
+k.display()
