@@ -43,5 +43,95 @@ let myOrder=new Shipping//("9 days"," Seller will accept returns within a 15 day
 document.writeln("<br>")
 document.write(myOrder.show())
 
+class BATTERY{
+constructor(BatterCapacity){
+this.Nonremovable_LiPo ="1715 mAh battery (6.9 Wh)"
+this.Standby ="Up to 240 h (3G)"
+this.Talktime = "Up to 14 h (3G)"
+this.Musicplay = "Up to 50 h"
+this.NETWORKTechnology = "GSM / CDMA / HSPA / EVDO / LTE"
+}
+present()
+{
+return this.Nonremovable_LiPo + this.Standby + this.Talktime + this.Musicplay + this.NETWORKTechnology ;
+}
+}
+class Battery_life extends BATTERY{
+constructor(charge, hertz){
+super(charge);
+this.hertz=hertz;
+}
+show(){
+return this.Nonremovable_LiPo + this.Standby + this.Talktime + this.Musicplay + this.NETWORKTechnology ;
+}
+}
+let capacityy= new Battery_life;
+document.writeln(capacityy.show())
+
+class Appearance_information{
+constructor(appearance)
+{
+this.Weight="55";
+this.Hight="5.8 ";
+this.Eyecolour="brown"; 
+this.Gender="male";
+this.Homeaddress="#6/96,rajampet,kadapa"; 
+this.Homephone="975545445"; 
+this.Mobile=8553577745; 
+this.State="andhraprsh";
+this.Country="india";
+}
+present()
+{
+return 'The person apperance has' + this.Weight+this.Hight+this.Eyecolour+this.Gender+this.Homeaddress+this.Homephone+this.Mobile+this.State+this.Country;
+}
+}
+
+class info extends Appearance_information
+{
+constructor(appearance)
+{
+super(appearance);
+this.appeararance
+}
+show()
+{
+return this.present();
+}
+}
+let informa=new info();
+document.write("<br>");
+document.write(informa.show())
+
+class Vehicleinformation{
+constructor(vehicle)
+{
+this.Vehicletype="light motor ";
+this.vehicle= "car ";
+this.Colour="red" ;
+this.Enginenumber="kp98gtyihh457797" ;
+this.Chassisnumber="tc5678898335r45 ";
+this.Company="BMW";
+}
+present()
+{
+return 'The vehicle is a' + this.Vehicletype+ 'which is' + this.vehicle+ 'in colour'+this.Colour+this.Enginenumber+this.Chassisnumber+this.Company;
+}
+}
+
+class information extends Vehicleinformation{
+constructor(vehicle)
+{
+super(vehicle);
+this.vehicle=vehicle;
+}
+show()
+{
+return this.present();
+}
+}
+let vehi_info=new information();
+document.writeln("<br>");
+document.writeln(vehi_info.show())
 
 </script>
