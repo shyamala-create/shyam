@@ -134,4 +134,34 @@ let vehi_info=new information();
 document.writeln("<br>");
 document.writeln(vehi_info.show())
 
+class License{
+constructor(license)
+{
+this.Lastname="kumar";
+this.First_name="Pavan";
+this.Middle_name="Bijjavaram ";
+this.Drivers_license_number="ka50201500006939";
+this.Drivers_license_state="karnataka";
+this.Drivers_license_country="india";
+this.Civilian_type="around india ";
+this.Employee_type="software engineer";
+this.Date_of_birth="12-07-1992";
+this.City_of_birth="rajampet";
+}
+present()
+{
+return this.Lastname+this.First_name+this.Middle_name+this.Drivers_license_number+this.Drivers_license_state+this.Drivers_license_country+this.Civilian_type+this.Employee_type+this.Date_of_birth+this.City_of_birth;
+}
+}
+class Drive extends License{
+constructor(license, type){
+super(license);
+this.licensetype=type;
+}
+show(){
+return this.present();
+}
+}
+let license_type=new Drive();
+document.writeln(license_type.show());
 </script>
