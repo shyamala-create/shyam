@@ -98,6 +98,21 @@ function myCalculator(num1, num2) {
 let result = myCalculator(5, 5);
 myDisplayer(result);
 
+==============================================================================================================================
+function BroadBand(accnum,userid,ipaddress)                   
+{
+  document.writeln("AccountNumber")
+}
+function Net(callbackbroadbandinfo)
+{
+ this.TotalMBDownloaded = "40.05 GB"
+ this.MobileDownloadSpeed ="40 mbps"
+ this.MobileUploadSpeed = "37.07 mbps"
+ document.writeln("TotalMBDownloaded :"+"<br>"+this.TotalMBDownloaded)
+ callbackbroadbandinfo(1156255,8726728,"12.392.21.190")
+}
+Net(BroadBand)
+
 ====================================================================================================================================
 //static functions
 class employee
@@ -271,20 +286,7 @@ display()
 var email=new request('Siva Prasad <kasi.sivap@gmail.com>','D B Venkatesh <venkatesh.db@gmail.com>','Fri, Nov 27, 2015 at 12:05 AM','Request to forward the Resumes','gmail.com',"gmail.com")
 email.display()
 Request.mail()
-==============================================================================================================================
-function BroadBand(accnum,userid,ipaddress)                   
-{
-  document.writeln("AccountNumber")
-}
-function Net(callbackbroadbandinfo)
-{
- this.TotalMBDownloaded = "40.05 GB"
- this.MobileDownloadSpeed ="40 mbps"
- this.MobileUploadSpeed = "37.07 mbps"
- document.writeln("TotalMBDownloaded :"+"<br>"+this.TotalMBDownloaded)
- callbackbroadbandinfo(1156255,8726728,"12.392.21.190")
-}
-Net(BroadBand)
+
 ===================================================================================================================================
 let shyam={
            company:"jvt",
@@ -426,6 +428,7 @@ var PD=passeenger("RLWL")
 if(PD!=undefined){
 document.writeln(age[0])
 }
+==========================================================================================================================================
 class flight
    {
      constructor(flightname,flightno)
@@ -490,5 +493,5 @@ class flight
     }
     var f=new flight("Air India",3664)
     
-    
-</script>
+=========================================================================================================================== 
+
