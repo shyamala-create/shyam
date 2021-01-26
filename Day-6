@@ -1,3 +1,10 @@
+                    Learning:- Inheritence, encapsulation, callback_functions, static_functions.
+                    challenges:- 
+                    Total :- 500 lines of code completed
+                               (20thth jan 2021)
+                    working hours:- 4.5hrs
+
+==================================================================================================================
 <script>
 class Car {
   constructor(brand) {
@@ -20,7 +27,7 @@ class Model extends Car {
 
 let myCar = new Model("Ford", "Mustang");
 document.write(myCar.show())
-
+=========================================================================================================================
 class SHIPPING_DETAILS{
 constructor(order){
 this.Estimated_Arrival = "9 days";
@@ -42,7 +49,7 @@ show() {
 let myOrder=new Shipping//("9 days"," Seller will accept returns within a 15 days from date of delivery of the item")
 document.writeln("<br>")
 document.write(myOrder.show())
-
+=========================================================================================================================================
 class BATTERY{
 constructor(BatterCapacity){
 this.Nonremovable_LiPo ="1715 mAh battery (6.9 Wh)"
@@ -67,7 +74,7 @@ return this.Nonremovable_LiPo + this.Standby + this.Talktime + this.Musicplay + 
 }
 let capacityy= new Battery_life;
 document.writeln(capacityy.show())
-
+=============================================================================================================================
 class Appearance_information{
 constructor(appearance)
 {
@@ -102,7 +109,7 @@ return this.present();
 let informa=new info();
 document.write("<br>");
 document.write(informa.show())
-
+========================================================================================================================================
 class Vehicleinformation{
 constructor(vehicle)
 {
@@ -134,7 +141,7 @@ let vehi_info=new information();
 document.writeln("<br>");
 document.writeln(vehi_info.show())
 
-
+==============================================================================================================================
 <script>
 function passeenger(status){
 name=["venkatesh "," "," naveen RM"]
@@ -164,7 +171,7 @@ function DataScience(callback){
 }
 
 DataScience(AI) //Line 7 
-
+===================================================================================================================
 class tickdet
 {
 constructor()
@@ -186,7 +193,7 @@ function TNJ(callback){
 callback("XXX")
 }
 TNJ(varsi.dply)
-
+===========================================================================================================================
 class License{
 constructor()
 {
@@ -209,6 +216,59 @@ document.write(Lastname)
 
 </script>
 <!-- edit your html here -->
+=============================================================================================================================
+class Vehicle {
+  protected String brand = "Ford";        // Vehicle attribute
+  public void honk() {                    // Vehicle method
+    System.out.println("Tuut, tuut!");
+  }
+}
 
+class Car extends Vehicle {
+  private String modelName = "Mustang";    // Car attribute
+  public static void main(String[] args) {
 
+    // Create a myCar object
+    Car myCar = new Car();
+
+    // Call the honk() method (from the Vehicle class) on the myCar object
+    myCar.honk();
+
+    // Display the value of the brand attribute (from the Vehicle class) and the value of the modelName from the Car class
+    System.out.println(myCar.brand + " " + myCar.modelName);
+  }
+}
 </script>
+========================================================================================================================================
+class License{
+constructor(license)
+{
+this.Lastname="kumar";
+this.First_name="Pavan";
+this.Middle_name="Bijjavaram ";
+this.Drivers_license_number="ka50201500006939";
+this.Drivers_license_state="karnataka";
+this.Drivers_license_country="india";
+this.Civilian_type="around india ";
+this.Employee_type="software engineer";
+this.Date_of_birth="12-07-1992";
+this.City_of_birth="rajampet";
+}
+present()
+{
+return this.Lastname+this.First_name+this.Middle_name+this.Drivers_license_number+this.Drivers_license_state+this.Drivers_license_country+this.Civilian_type+this.Employee_type+this.Date_of_birth+this.City_of_birth;
+}
+}
+class Drive extends License{
+constructor(license, type){
+super(license);
+this.licensetype=type;
+}
+show(){
+return this.present();
+}
+}
+let license_type=new Drive();
+document.writeln(license_type.show());
+
+======================================================================================================================================
