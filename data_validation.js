@@ -14,12 +14,12 @@ document.writeln(servicecharge)
 }
 
 function passeenger(status){
-name=["venkatesh "," "," naveen RM"]
+name=["venkatesh "," "," shyam RM"]
 	if(name[1]==undefined){
     return "invalid"
     }
 age=[27,27,23]
-gender=["make","female","female"]
+gender=["make","male","male"]
 seat=[7,8,9]
 return age
 }
