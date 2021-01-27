@@ -19,7 +19,7 @@ name=["venkatesh "," "," naveen RM"]
     return "invalid"
     }
 age=[27,27,23]
-gender=["make","male","male"]
+gender=["make","female","female"]
 seat=[7,8,9]
 return age
 }
