@@ -46,7 +46,7 @@ class flight
           if(this.id==100038)
           {
             document.writeln("Your ticket details are")
-            this.details("Adithyan","Male","aj@123","COK","MLB")
+            this.details("shyamla","female","shyam@gmail.com","valid","MLB")
           }
           else
           {
@@ -60,7 +60,7 @@ class flight
          this.mailid=mailid
          this.from=from
          this.to=to
-         if(mailid=="aj@123")
+         if(mailid=="shyam@gmail.com")
          {
           //document.writeln("Wish you a happy and safe journey")
           this.display()
