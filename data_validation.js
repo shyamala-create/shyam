@@ -1,4 +1,4 @@
-function faredet(dist){
+function faredetails(dist){
 ditance="323KM"
     if(dist>=500){
     return "invalid"
@@ -8,7 +8,7 @@ servicecharge="Rs.22.90"
 Totalfare="Rs.442.90"
 return servicecharge
 }
-var accno= faredet(200)
+var accno= faredetails(200)
 if(accno!=undefined){
 document.writeln(servicecharge)  
 }
