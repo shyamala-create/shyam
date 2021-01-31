@@ -62,7 +62,6 @@ class flight
          this.to=to
          if(mailid=="shyam@gmail.com")
          {
-          //document.writeln("Wish you a happy and safe journey")
           this.display()
         }
         else
@@ -135,7 +134,7 @@ let system=
      document.write(this.description)
      document.write(this.os)
      document.write(this.version)
-    document.write(this.id)
+     document.write(this.id)
 
     }
    }
@@ -245,7 +244,7 @@ let system=
      document.write(this.description)
      document.write(this.os)
      document.write(this.version)
-    document.write(this.id)
+     document.write(this.id)
 
     }
    }
